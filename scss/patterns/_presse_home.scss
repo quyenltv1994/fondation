@@ -1,0 +1,60 @@
+.presse__home{
+  margin-bottom: 80px;
+  .title{
+    max-width: 1134px;
+    margin:0 auto;
+    margin-bottom: 30px;
+    @media screen and (min-width: $tablet-medium){
+      margin-left: 50px;
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $desktop-medium){
+      margin-left: auto;
+    }
+  }
+  .wrapper{
+    max-width: $maxsize;
+  }
+  &--main{
+    @include display-flex();
+    flex-wrap: wrap;
+    @media screen and (min-width: $mobile-small){
+      margin:0 -9px;
+    }
+    @media screen and (min-width: $desktop-medium){
+      margin:0 34px;
+    }
+  }
+  &--item{
+    width: 100%;
+    background: $white;
+    box-shadow: 1px 1px 12px #ccc;
+    margin:9px 0;
+    @media screen and (min-width: $mobile-small){
+      width: calc(50% - 18px );
+      margin:9px;
+    }
+    @media screen and (min-width: $desktop-small){
+      width: calc(25% - 18px );
+      margin:0 9px;
+    }
+    .image{
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+    &--content{
+      padding:28px 35px 0;
+    }
+    &-title{
+      margin-bottom: 15px;
+      a{
+        font-size: 28px;
+        color: $navy-blue;
+        font-family: $font-bold;
+        line-height: 35px;
+      }
+    }
+  }
+}

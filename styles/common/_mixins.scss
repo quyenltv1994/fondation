@@ -1,0 +1,44 @@
+@mixin pad-ratio($x, $y, $selector: img) {
+  position: relative;
+  padding: 0 0 percentage($y/$x) 0;
+  height: 0;
+  #{$selector} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@mixin innerMargin() {
+  padding:0 .5rem;
+  @include breakpoint(small only) {
+    padding:0;
+  }
+}
+
+@mixin ie-bold() {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+   {
+    font-family: 'excellence_in_motion', 'Open Sans', sans-serif;
+    font-weight: bold;
+  }
+  @supports (-ms-ime-align:auto) {
+    font-family: 'excellence_in_motion', 'Open Sans', sans-serif;
+    font-weight: bold;
+  }
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -ms-transform: $transform; // IE9 only
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+@mixin hover {
+  &:hover, &:active, &:focus {
+    @content;
+  }
+}

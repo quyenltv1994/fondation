@@ -1,0 +1,507 @@
+body.page-contact, body.contactPage {
+  #block-base-contact-us {
+    a {
+      text-decoration: underline;
+      color:red;
+    }
+  }
+}
+/*
+ * Helpers!
+ */
+// Invisible but accessible (and sometimes focusable) content
+.u-visuallyhidden,
+.element-invisible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+
+  &.element-focusable,
+  &.u-focusable {
+    &:active,
+    &:focus {
+      position: static !important;
+      clip: auto;
+      overflow: visible;
+      height: auto;
+    }
+  }
+}
+
+/*
+ * Contact page + containers style override
+ */
+.ContactPage {
+  .main .wrap:first-of-type {
+    box-shadow: none;
+  }
+  .main-content {
+    background-color: $grey-bg;
+  }
+  .page-content {
+    @include breakpoint(medium up) {
+      padding: 0 130px;
+    }
+  }
+}
+
+/*
+ * Contact page content heading
+ */
+.main .main-content h1.ContactPage-title {
+  margin-top: 0;
+}
+
+.ContactPage-heading {
+  padding: 0 80px 0 60px;
+  @include breakpoint(medium up) {
+    padding: 0;
+    max-width: 760px;
+  }
+}
+
+.ContactPage-intro {
+  font-family: $medium;
+}
+
+/*
+ * Contact page content
+ */
+.ContactPage-content {
+  min-height: 670px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.node-type-contact-page [id="block-system-main"] {
+  @extend .ContactPage-content;
+  box-shadow: none;
+}
+/*
+ * Contact Steps indicators in content header
+ */
+.ContactSteps-container {
+  text-align: center;
+  padding: 15px 0;
+  background-color: $light-grey;
+}
+
+.ContactSteps {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.ContactSteps-stepTitle {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: $medium;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.ContactSteps-step {
+  height: 25px;
+  width: 25px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  color: #c5c5c5;
+  position: relative;
+  font-family: $bold;
+  @include ie-bold();
+  text-align: center;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -50px;
+    top: 11.5px;
+    width: 50px;
+    height: 1px;
+    background-color: $grey-bg;
+  }
+  &:first-child {
+    margin-left: 0;
+    &:before {
+      content: none;
+    }
+  }
+
+  &.is-pastStep,
+  &.is-activeStep {
+    color: #ffffff;
+    &,
+    &:before {
+      background-color: $azure;
+    }
+  }
+}
+
+/*
+ * Contact Profiles & steps common styles.
+ */
+.ContactProfiles,
+.ContactTopics,
+.node-contact-page {
+  padding: 0 60px;
+  margin: 20px auto 0;
+  text-align: left;
+  //@include breakpoint(small only) {
+  //  padding: 0 20px;
+  //}
+  @include breakpoint(small up) {
+    padding: 0 15% 0 20%;
+  }
+
+  @include breakpoint(large up) {
+    min-width: 790px;
+  }
+}
+.ContactProfiles {
+  padding-bottom: 20px;
+}
+
+.ContactProfiles-title,
+.ContactTopics-title {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.ContactProfiles-title {
+  width: 150px;
+}
+
+/*
+ * Contact Profile blocks on step 1
+ */
+
+.ContactProfile {
+  display: flex;
+  min-width: 350px;
+  margin-top: 10px;
+}
+
+.ContactProfile-profile {
+  width: 150px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: $grey-bg;
+
+  .no-topics & {
+    margin-left: 150px;
+    width: 0;
+  }
+
+}
+
+.ContactProfile-title {
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
+.ContactProfile-topics {
+  flex: 1;
+}
+
+/*
+ * Contact Topics in following steps
+ */
+.ContactTopic {
+  display: flex;
+  align-content: stretch;
+  flex: 1;
+  min-height: 60px;
+  margin-top: 10px;
+
+  position: relative;
+
+  &:not(.has-icon) {
+    .ContactTopic-title {
+      padding-left: 80px + 15px;
+      @include breakpoint(medium up) {
+        padding-left: 146px + 15px;
+      }
+    }
+  }
+  .ContactProfile & {
+    // No margin when topic is embedded in a profile
+    margin-top: 0;
+    &:not(.has-icon) {
+      .ContactTopic-title {
+        padding-left: 15px;
+        @include breakpoint(medium up) {
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}
+
+.ContactTopic-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 60px;
+  @include breakpoint(medium up) {
+    width: 146px;
+  }
+  .ContactProfile & {
+    display: none;
+  }
+  .has-icon & {
+
+    background-color: $grey-bg;
+
+  }
+}
+
+.ContactTopic-title {
+  flex: 1;
+  padding: 18px 62px 18px 15px;
+  border: 1px solid $grey-bg;
+  text-transform: uppercase;
+  font-family: $bold;
+
+  .ContactProfile & {
+    border-top: none;
+  }
+  .ContactTopic:first-child & {
+    border-top: 1px solid $grey-bg;
+  }
+  .has-icon & {
+    border-left: none;
+  }
+}
+
+.ContactTopic-btn {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: -1px;
+  z-index: 50;
+  width: 62px;
+  padding-top: 21px;
+  border-bottom: 1px solid #ffffff;
+  background-color: red;
+  text-align: center;
+  text-decoration: none;
+
+  .ContactProfile & {
+    bottom: 0;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:before {
+    color: #FFF;
+    font-size: 17px;
+  }
+}
+
+/*
+ * Final step embedded node.
+ */
+.ContactPage-node-embedded,
+.node-contact-page {
+  padding-top: 40px;
+  margin-top: 0;
+  .field-collection-container {
+    border: none;
+  }
+  .field-collection-view {
+    margin: 0 0 30px 0;
+    border: none;
+    padding: 0;
+  }
+}
+
+/*
+ * Contact information field collections
+ */
+.ContactInfo {
+  position: relative;
+}
+.ContactInfo-icon {
+  position: absolute;
+  left: -56px;
+  top: 7px;
+}
+h3.ContactInfo-title {
+  margin-bottom: .3rem;
+  font-size: 16px;
+  font-family: $bold;
+}
+.ContactInfo-content {
+  * {
+    line-height: 1.2;
+  }
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  li {
+    padding-left: 1em;
+    text-indent: -.7em;
+    &:before {
+      content: "• ";
+      color: $red;
+    }
+  }
+}
+.ContactInfo-phones {
+  .form-item {
+    display: flex;
+
+    @include breakpoint(small down) {
+      flex-direction: column;
+    }
+  }
+}
+.Contact-phoneList {
+  width: 195px;
+  background-image: url("../fonts/arrow-contact.svg");
+  text-transform: uppercase;
+  font-family: $bold;
+  @include ie-bold();
+  font-size: .8rem;
+
+  @include breakpoint(large up) {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint(small down) {
+    margin-bottom: 5px;
+  }
+  &.has-value {
+    color: #52B4E7;
+  }
+}
+.Contact-phoneNumber {
+  padding-top: 10px;
+  margin-left: 50px;
+  font-size: 1.3rem;
+  font-family: $bold;
+  color: #cccccc;
+
+  @include breakpoint(medium down) {
+    margin-left: 10px;
+  }
+  @include breakpoint(small down) {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  @include breakpoint(large up) {
+    padding-top:0;
+    display: flex;
+    align-items:center;
+  }
+  &.has-value {
+    color: $navy-blue;
+  }
+
+  .icon-phone {
+    display: inline-block;
+    margin-right: 25px;
+    color: #cccccc;
+  }
+  .js-value {
+    font-size:1.1rem;
+  }
+}
+.ContactInfo-links {
+  a {
+    padding: .5rem .7rem;
+    background-color: $red;
+    text-transform: uppercase;
+    font-family: $bold;
+    @include ie-bold();
+    color: #ffffff;
+  }
+}
+
+body {
+  //display: none;
+}
+.ContactPage-helpfulInfo {
+  min-height: 230px;
+  padding: 20px 0;
+}
+.ContactPage-helpfulInfo-title {
+  font-family: $medium;
+}
+.ContactPage-helpfulInfo-buttons {
+  padding: 20px 0;
+  a {
+    display: inline-flex;
+    flex-direction: row;
+    width: 49%;
+    text-decoration: none;
+    font-family: $bold;
+    @include ie-bold();
+    [class*=icon] {
+      display: inline-block;
+      vertical-align: top;
+      padding: 1em;
+      margin-right: 5px;
+      box-shadow: inset 1px 1px 2px 0px rgba(0, 2, 45, 0.1), inset -1px -1px 2px 0px rgba(0, 2, 45, 0.1);
+      align-self: flex-start;
+    }
+    span {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 70%;
+    }
+    &[data-helpful=yes] [class*=icon] {
+      &:before {
+        color: green;
+      }
+    }
+    &[data-helpful=no] [class*=icon] {
+      &:before {
+        color: $red;
+      }
+    }
+    &:hover {
+      color: inherit;
+      &:before {
+      }
+    }
+  }
+}
+.ContactPage-helpfulInfo-content {
+  text-align: center;
+  position: relative;
+
+  p {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    right: -50px;
+    opacity: 0;
+    min-height: 100px;
+    padding: 25px 50px;
+    background-color: $grey-bg;
+    transition: opacity .3s;
+    &.is-visible {
+      opacity: 1;
+    }
+  }
+}

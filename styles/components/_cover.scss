@@ -1,0 +1,9 @@
+.main-image {
+	height:350px;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	@include breakpoint(medium up) {
+		margin-top: -30px;
+	}
+}

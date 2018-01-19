@@ -1,0 +1,249 @@
+.side-content {
+	margin-top: 60px; // because of social box
+    a:hover:not(.button) {
+        color:$red !important;
+    }
+    .press-push {
+		position:relative;
+		.views-field-field-more-link {
+			position:absolute;
+			bottom:0;
+			left:50%;
+          	width: auto;
+			transform: translateX(calc(-50% - 16px)) translateY(50%);
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { //ie 10 - 11 hack
+				transform: translateX(-50%) translateY(50%);
+			}
+
+			.button {
+				margin: 0;
+              //padding-right: 35px;
+              .title {
+                max-width: none;
+                white-space: nowrap;
+                padding-right: 10px;
+              }
+              .icon {
+                position: absolute;
+                left: 100%;
+                top: 0;
+                bottom: 0;
+              }
+			}
+		}
+    	img {
+    		box-shadow: 0px 0px 10px 0px rgba($navy-blue, 0.2);
+    	}
+    }
+	.view-press-push {
+		margin-bottom: 15.5px;
+		.views-row {
+			position:relative;
+		}
+		.views-field-field-image {
+			background-color: $navy-blue;
+			height: 158px;
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 51, 0.2);
+		}
+		.views-field-field-more-link {
+			position:absolute;
+			bottom: -15.5px;
+            /*width:calc(100% - 33px);*/
+            width: 100%;
+			text-align: center;
+			.button {
+                //width: 100%;
+                height: auto;
+				margin:0;
+                min-height: 33px;
+                line-height: 1;
+                padding: 10px 43px 10px 10px;
+                &:after{
+                    right:0;
+                    bottom: 0;
+                    top:initial;
+                }
+			}
+		}
+	}
+	.rss-subscribe {
+        width: 100%;
+		text-align: center;
+	}
+	.last-news {
+		margin-top: 40px;
+		h2 {
+			text-transform: uppercase;
+			font-size: 22px;
+			line-height: 22px;
+			
+			font-family: $bold;
+			margin: 15px 0;
+		}
+		.last-news-list-article {
+			margin-bottom: 20px;
+			line-height: 12px;
+		}
+		.new-title {
+			font-size: 13px;
+			line-height: 16px;
+			
+			font-family: $bold;
+			@include ie-bold();
+		}
+		time {
+			font-size:12px;
+		}
+		.text-block {
+			position:relative;
+			padding-left: 30px;
+			&:before {
+				font-family: 'icomoon';
+				content: '\e809';
+				position:absolute;
+				left:0;
+				top:2px;
+				font-size:10px;
+			}
+		}
+	}
+	.block {
+		margin: 20px 0;
+		&.press-push {
+			margin: 20px 0 55.5px;
+		}
+		h2 {
+			text-transform: uppercase;
+			font-size: 22px;
+			line-height: 22px;
+			
+			font-family: $bold;
+			margin: 15px 0;
+		}
+		.item-list {
+			ul {
+			list-style:none;
+			margin:0;
+				li {
+					margin: 0;
+					padding: 0 0 10px 30px;
+					position:relative;
+					font-size: 13px;
+					a {
+						font-family: $bold;
+						@include ie-bold();
+						
+                        color:$navy-blue;
+					}
+					&:before {
+						font-family: 'icomoon';
+						content: '\e809';
+						position:absolute;
+						left:0;
+						top:2px;
+						font-size:10px;
+						font-weight: normal;
+					}
+					.filter-count {
+						font-family: $regular;
+					}
+					p {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.block-theme {
+		.item-list {
+			li {
+
+			}
+		}
+	}
+	.region-sidebar-second {
+		li {
+			a.active {
+				color:$azure;
+			}
+		}
+	}
+}
+
+
+.second-nav {
+	
+	.title {
+		font-size: 15px;
+		line-height: 16px;
+		font-family: $bold;
+		text-transform: uppercase;
+	}
+	
+	.menu {
+		margin: 0;
+		padding:0;
+		list-style:none;
+		li {
+			font-size: 13px;
+			line-height: 16px;
+			font-family: $bold;
+			@include ie-bold();		
+			font-size: 13px;
+			position:relative;
+			list-style-image: none !important;
+			list-style-type: none !important;
+			padding:0 0 0 30px;
+			margin: .5rem 0;
+			&:before {
+				content:'\e809';
+				font-size: 9px;
+				top:0px;
+				position:absolute;
+				left:0px;
+				font-family: 'icomoon';
+			}
+		}	
+	}
+	
+}
+.offers {
+	list-style:none;
+	margin: 20px 0 0;
+	h3 {
+		font-size: 22px;
+		line-height: 1;
+		font-family: $bold;
+		text-transform: uppercase;
+		margin-top:1.9rem;
+		margin-bottom:1rem;
+	}
+	li {
+		display: block;
+		border:1px solid #ededed;
+		padding:20px 20px 20px 30px;
+		line-height: 16px;
+		font-size: 13px;
+		border-bottom:none;
+		position:relative;
+
+		&:before {
+			content:'\e809';
+			font-size: 9px;
+			top:20px;
+			position:absolute;
+			left:10px;
+			font-family: 'icomoon';
+		}
+		a {
+			font-size: 13px;
+			line-height: 16px;
+			font-family: $bold;
+			@include ie-bold();
+		}
+		&:last-of-type {
+			border-bottom:1px solid #ededed;
+			margin-bottom: 10px;
+		}
+	}
+}

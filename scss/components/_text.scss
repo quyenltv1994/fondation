@@ -1,0 +1,235 @@
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-family: $font-main;
+  color: $textcolor;
+  background: $maincolor;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+}
+
+.fonts-loaded > body {
+  font-family: $font-main;
+}
+
+.lte-ie8 > body {
+  font-family: $font-main;
+}
+
+a {
+  color: $maincolor;
+  text-decoration: none;
+  @include hover {
+    color: $maincolor;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1, .h1 {
+  font-size: 25px;
+}
+
+h2, .h2 {
+  font-size: 23px;
+}
+
+h3, .h3 {
+  font-size: 21px;
+}
+
+h4, .h4 {
+  font-size: 19px;
+}
+
+h5, .h5 {
+  font-size: 17px;
+}
+
+h6, .h6 {
+  font-size: 15px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  line-height: $heading-line-height;
+}
+
+/* Lists
+----------------------------------------------------------------------------------------------------*/
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+}
+
+/* Spacing
+----------------------------------------------------------------------------------------------------*/
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin: 0 0 20px 0;
+}
+
+/* Wysiwyg style
+----------------------------------------------------------------------------------------------------*/
+hr {
+  clear: both;
+  border: 0;
+  height: 1px;
+  background: $white;
+}
+
+blockquote {
+  border-left: 5px solid $white;
+  padding: 20px;
+  margin: 0 0 20px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  p:last-child {
+    margin: 0;
+  }
+}
+
+cite {
+  font-style: italic;
+}
+
+small {
+  font-size: 11px;
+}
+
+table {
+  margin: 20px 0;
+  width: 100%;
+  border: #000;
+  border-collapse: collapse;
+  border-left: 0;
+  border-radius: 3px;
+  th {
+    padding: 10px;
+    border-left: 1px solid #000;
+    border-top: 0;
+    vertical-align: top;
+    text-align: left;
+  }
+  td {
+    padding: 10px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    vertical-align: top;
+    text-align: left;
+  }
+}
+
+address {
+  display: block;
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+abbr {
+  text-decoration: underline;
+}
+
+abbr[title], abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #000;
+}
+
+big {
+  font-size: larger;
+}
+
+code {
+  display: inline-block;
+  padding: 2px 5px;
+  background-color: $white;
+  border: 1px solid $dark;
+  font-family: monospace;
+  font-size: $base-font-size;
+  border-radius: 3px;
+}
+
+s,
+strike,
+del {
+  text-decoration: line-through;
+}
+
+em,
+var {
+  font-style: italic;
+}
+
+ins {
+  background-color: $white;
+  text-decoration: none;
+}
+
+tt,
+kbd,
+samp {
+  font-family: monospace;
+}
+
+pre {
+  display: block;
+  padding: 10px;
+  margin: 0 0 20px;
+  word-break: break-all;
+  white-space: pre-wrap;
+  background-color: $white;
+  border: 1px solid $dark;
+  border-radius: 3px;
+}
+
+q {
+  display: inline;
+  font-style: italic;
+}
+
+sub,
+sup {
+  bottom: -0.25em;
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+.text {
+
+  &__center {
+    text-align: center;
+  }
+}
+

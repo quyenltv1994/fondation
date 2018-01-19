@@ -1,0 +1,240 @@
+/* Menus - mobile
+----------------------------------------------------------------------------------------------------*/
+.button__menu {
+  &-open {
+    display: block;
+    width: 26px;
+    height: 22px;
+    position: relative;
+    @include rotate(0);
+    @include transition (all .5s ease-in-out);
+    background: transparent;
+    &.open {
+
+      span {
+        &:nth-child(1),
+        &:nth-child(6) {
+          @include rotate(45);
+        }
+
+        &:nth-child(2),
+        &:nth-child(5) {
+          @include rotate(-45);
+        }
+
+        &:nth-child(1) {
+          left: 2px;
+          top: 4px;
+        }
+
+        &:nth-child(2) {
+          left: calc(50% - 2px);
+          top: 4px;
+        }
+
+        &:nth-child(3) {
+          left: -50%;
+          opacity: 0;
+          @include opacity(0);
+        }
+
+        &:nth-child(4) {
+          left: 100%;
+          @include opacity(0);
+        }
+
+        &:nth-child(5) {
+          left: 2px;
+          top: 13px;
+        }
+
+        &:nth-child(6) {
+          left: calc(50% - 2px);
+          top: 13px;
+        }
+
+      }
+    }
+
+    span {
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 50%;
+      background: $color-readmore;
+      @include rotate(0);
+      @include transition (all .25s ease-in-out);
+
+      &:nth-child(even) {
+        left: 50%;
+        @include border-radius(0 9px 9px 0);
+      }
+
+      &:nth-child(odd) {
+        left: 0;
+        @include border-radius(9px 0 0 9px);
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        top: 0;
+      }
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        top: 10px;
+      }
+
+      &:nth-child(5),
+      &:nth-child(6) {
+        top: 20px;
+      }
+    }
+  }
+
+  &-container {
+    z-index: 999;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    padding: 5px;
+    @media screen and (min-width: $tablet-lage) {
+      display: none;
+    }
+
+    .demo-icon {
+      font-size: 26px;
+    }
+  }
+}
+
+// Mobile menu stop scroll on body and display button */
+.menu-mobile--active {
+  overflow: hidden;
+}
+
+/* Menus - tablette/pc
+----------------------------------------------------------------------------------------------------*/
+.menu {
+  z-index: 998;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  width: 80%;
+  padding: 40px 0;
+  background: $white;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  @include clearfix;
+  @include transition (left 0.5s ease-out);
+
+  &.opened {
+    left: 0;
+    box-shadow: 0 0 100px rgba($dark, 0.5);
+  }
+
+  .wrapper {
+    padding: 0;
+    height:50px;
+    @media screen and (min-width: $tablet-lage) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  ul {
+    @include clearfix;
+
+    ul {
+      display: none;
+    }
+
+    & > li {
+      display: inline-block;
+      position: relative;
+      @media screen and (max-width: $tablet-lage - 1px){
+        display: block;
+      }
+      & > a {
+        display: block;
+        text-transform: uppercase;
+        font-size: 14px;
+        transition: all .5s;
+        @include hover {
+          color: $color-hover;
+        }
+        @media screen and (max-width: $tablet-lage - 1px){
+          color: $color-readmore;
+          padding:10px;
+          font-size: 20px;
+        }
+      }
+
+      @include hover {
+        ul {
+          display: block;
+        }
+      }
+
+      &.sfHover,
+      &.current-menu-item,
+      &.current-menu-parent {
+
+        & > a {
+          color: $color-hover;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $tablet-lage) {
+    //reset mobile menu position and dimensions
+    position: static;
+    left: auto;
+    overflow: inherit;
+    background: none;
+    width: 100%;
+    padding: 0;
+    max-width: calc(100% - 60px);
+    ul {
+      @include display-flex();
+      justify-content: space-between;
+      width: 100%;
+      & > li {
+        display: inline-block;
+        position: relative;
+        @include hover {
+          ul {
+            top: 40px;
+          }
+        }
+
+        &.sfHover {
+
+          ul {
+            top: 40px;
+          }
+        }
+      }
+
+      ul {
+        top: 100%;
+        position: absolute;
+        background: $white;
+
+        li {
+
+          a {
+            @include hover {
+              color: $white;
+              background: $maincolor;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.project__home{
+  .title{
+    max-width: 1134px;
+    margin:0 auto;
+    margin-bottom: 60px;
+    @media screen and (min-width: $tablet-medium){
+      margin-left: 50px;
+    }
+    @media screen and (min-width: $desktop-medium){
+      margin-left: auto;
+    }
+  }
+  .wrapper{
+    max-width: $maxsize;
+  }
+  &--item{
+    @include clearfix();
+    margin-bottom:40px;
+    @media screen and (min-width: $desktop-medium){
+      min-height: 486px;
+    }
+    @media screen and (min-width: $tablet-medium){
+      margin-bottom:80px;
+    }
+    @include clearfix;
+    .image{
+      width: 100%;
+      @media screen and (min-width: $tablet-medium){
+        position: absolute;
+        width: 100%;
+        max-width: 57%;
+        margin-left: -15px;
+      }
+      @media screen and (min-width: $desktop-medium){
+        max-width: 67%;
+      }
+      img{
+        display: block;
+      }
+    }
+    &--main{
+      padding-top: 65px;
+    }
+    &--content{
+      width: 100%;
+      margin-left: auto;
+      background: $white; 
+      z-index: 2;
+      position: relative;
+      padding:51px 25px 35px 47px;
+      font-size: 18px;
+      border-top: 5px solid #ff0d0d;
+      box-shadow: 1px 1px 12px #ccc;
+      @media screen and (min-width: $tablet-medium){
+        max-width: 57%;
+      }
+      @media screen and (min-width: $desktop-medium){
+        padding:65px 70px 46px 90px;
+        margin-right: 43px;
+        max-width: calc(50% - 43px);
+      }
+      .project_title{
+        font-size: 32px;
+        font-family: $font-bold;
+        color:$navy-blue;
+        margin-bottom: 2px;
+      }
+      .content{
+        line-height: 24px;
+        margin-bottom: 28px;
+      }
+    }
+    &:nth-child(even){
+      .image{
+        right:0;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .project__home--item--main{
+        padding-top:0;
+        @media screen and (min-width: $desktop-medium){
+          padding-top: 65px;
+        }
+      }
+      .project__home--item--content{
+        border-top: 5px solid #9ce3f4;
+        @media screen and (min-width: $tablet-medium){
+          margin-right: auto;
+          margin-left: 0px;
+          top:-20px;
+        }
+        @media screen and (min-width: $desktop-medium){
+          margin-left: 43px;
+          top:0px;
+        }
+      }
+    }
+
+  }
+}

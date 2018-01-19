@@ -1,0 +1,183 @@
+.mosaic--hub {
+  @include grid-row(16);
+  background-color: $light-grey;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+  .mosaic__content {
+    width: 100%;
+
+    .block--simple ~ .block--simple ~ .block--simple {
+      @include breakpoint(medium down) {
+        order: 0;
+      }
+    }
+    .block {
+      @include breakpoint(medium down) {
+        order: -2;
+      }
+
+      background-size: cover;
+      .block--inner {
+        padding: 0;
+        width: 100%;
+        justify-content: flex-end;
+        position:relative;
+        .block--content {
+          position: absolute;
+          top:0;
+          h2 {
+            font-size: 24px;
+            color: $navy-blue;
+            text-transform: uppercase;
+          }
+          .description {
+            font-size: 17px;
+            line-height: 21px;
+          }
+        }
+        .morelink {
+          a {
+            color: $navy-blue;
+            font-family: $bold;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 20px;
+            line-height: 1;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-bottom: 5px solid #e1f3fd;
+            &:hover {
+              border-bottom: 5px solid $navy-blue;
+            }
+            &.red {
+              background-color: red;
+              border-bottom: none;
+              margin-bottom: 5px;
+              color: white;
+              &:hover {
+                background-color: white;
+                color: $navy-blue;
+                border-bottom: none;
+              }
+            }
+          }
+        }
+        .list-of-links {
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          z-index: 100;
+          position: relative;
+          &:after {
+            content: '';
+            height: 5px;
+            width: 100%;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: #e1f3fd;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+          .title {
+            color: $navy-blue;
+            font-family: $bold;
+            @include ie-bold();
+            text-transform: uppercase;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+          }
+          .list {
+            display: none;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            // margin: 10px 0 20px;
+            position: relative;
+            padding:0px 20px 20px;
+            &:after {
+              content: '';
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: -5px;
+              height: 5px;
+              background-color: red;
+            }
+            a {
+              font-size: 13px;
+              line-height: 15px;
+              font-family: $bold;
+              @include ie-bold();
+              color: $navy-blue;
+              width: 48%;
+              margin: 5px 1% 0;
+              display: inline-flex;
+              &:before {
+                content: '\e809';
+                font-family: 'icomoon';
+                font-size: 9px;
+                margin-right: 10px;
+              }
+              &:hover {
+                &:before {
+                  text-decoration: none;
+                }
+              }
+            }
+            @include breakpoint(medium down) {
+              display: none;
+              &.is-clicked {
+                display: flex;
+              }
+            }
+          }
+          @include breakpoint(large up) {
+            &:hover .list {
+              display: flex;
+            }
+          }
+
+        }
+      }
+      &.block--double {
+        @include breakpoint(medium down) {
+          order: -1;
+        }
+        & ~ .block--double {
+          @include breakpoint(medium down) {
+            order: 0;
+          }
+        }
+        & ~ .block--double ~ .block--double {
+          @include breakpoint(medium down) {
+            order: 1;
+          }
+        }
+        .block--inner {
+          .list-of-links {
+            .list {
+              padding: 0px 45px 20px 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(large up) {
+    .mosaic__content {
+      @include grid-column(12);
+      @include grid-column-offset(2);
+      @include grid-column-end;
+    }
+  }
+
+}

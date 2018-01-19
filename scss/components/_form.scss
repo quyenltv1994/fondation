@@ -1,0 +1,51 @@
+/* Global form css elements
+-------------------------------------------------------------- */
+#{$all-text-inputs},
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  color: $textcolor;
+  background: darken($white, 5%);
+  border-radius: 0; //reset border radius for ios
+  @include transition (background 0.5s ease);
+  @include appearance(none);
+  @include placeholder {
+    color: lighten($textcolor, 50%);
+  }
+}
+
+#{$all-text-inputs-hover},
+textarea:hover { // Target the :hover pseudo-class
+  background: darken($white, 7%);
+}
+
+#{$all-text-inputs-focus},
+textarea:focus { // Target the :focus pseudo-class
+  background: darken($white, 7.5%);
+}
+
+/* Label
+-------------------------------------------------------------- */
+label {
+  display: inline-block;
+  font-weight: 700;
+}
+
+/* Textarea
+-------------------------------------------------------------- */
+textarea {
+  resize: vertical;
+}
+
+/* Form layout
+-------------------------------------------------------------- */
+.form__row {
+  @include clearfix;
+  position: relative;
+  margin: 0 0 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

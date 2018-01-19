@@ -1,0 +1,36 @@
+//Load Bourbon mixin library
+//http://bourbon.io/docs/
+@import "bower_components/bourbon/app/assets/stylesheets/_bourbon";
+@import "bower_components/flexslider/flexslider";
+
+//Main sass config files
+@import "components/_variables";
+
+//Main websites components
+@import "components/_mixins";
+@import "components/_buttons";
+@import "components/_form";
+@import "components/_text";
+@import "components/_utility";
+
+//Main websites patterns
+@import "patterns/_font";
+@import "patterns/_anim";
+@import "patterns/_breadcrumb";
+@import "patterns/_article";
+@import "patterns/_footer";
+@import "patterns/_global";
+@import "patterns/_header";
+@import "patterns/_layout";
+@import "patterns/_menus";
+@import "patterns/_banner";
+@import "patterns/_socials";
+@import "patterns/_actua_home";
+@import "patterns/_project_home";
+@import "patterns/_unproject_home";
+@import "patterns/_presse_home";
+@import "patterns/_bref_home";
+
+//Pages
+@import "pages/_404";
+@import "pages/_print";

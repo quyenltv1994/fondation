@@ -1,0 +1,380 @@
+.view-slider-employer{
+  margin-top: -30px;
+  .slide__content{
+    margin: 0;
+    padding: 0;
+    .slide__grid{
+      list-style-type: none;
+      .grid__content{
+
+      }
+    }
+  }
+  img{
+    width: 100%;
+  }
+  .title-link-68{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    z-index: 2;
+    background: rgba(255,255,255,0.8);
+    .middle{
+      position: absolute;
+      left: 100px;
+      right: 100px;
+      top: 50%;
+      @include transform(translateY(-50%));
+    }
+  }
+  .views-field-title{
+    color: $navy-blue;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 34px;
+    font-weight: 400;
+    font-family: $bold;
+    margin-bottom: 20px;
+  }
+  .views-field-field-main-image{
+    position: relative;
+    z-index: 1;
+    height: 350px;
+    overflow: hidden;
+    .field-content{
+      height: 100%;
+      img{
+        top: 50%;
+        @include transform(translateY(-50%));
+        position: relative;
+      }
+    }
+  }
+  .views-field-field-more-link{
+    display: inline-block;
+    a{
+      background: $red;
+      color: $white2;
+      font-size: 14px;
+      font-weight: bold;
+      height: 33px;
+      line-height: 33px;
+      padding: 0 20px;
+      width: auto;
+      display: block;
+      text-transform: uppercase;
+      font-family: $bold;
+    }
+  }
+  .slick__arrow{
+    .slick-prev{
+      &:before{
+        font-family: 'icomoon';
+        content: '\e80b';
+        color: $navy-blue;
+        font-size: 50px;
+      }
+    }
+    .slick-next{
+      &:before{
+        font-family: 'icomoon';
+        content: '\e80a';
+        color: $navy-blue;
+        font-size: 50px;
+      }
+    }
+  }
+}
+.mosaic__content{
+  .block-calendar-68{
+    padding: 0;
+  }
+}
+.block-calendar-68{
+  .events-calendar-68{
+    position: relative;
+    height: 100%;
+    .hasDatepicker{
+      height: 100%;
+      .ui-widget{
+        font-family: $regular;
+        &.ui-widget-content{
+          border: none;
+          padding: 0;
+          border-radius: 0;
+          width: 100%;
+          height: 100%;
+          background: $light-grey;
+          color: $navy-blue;
+        }
+        .ui-widget-header{
+          background: #071237;
+          border: none;
+          height: 66px;
+          color: $white2;
+          text-transform: uppercase;
+          font-size: 16px;
+          padding: 0;
+          border-radius: 0;
+          border-bottom: 6px solid $grayishblue;
+          .ui-state-hover{
+            background: transparent;
+            border: none;
+          }
+          .ui-datepicker-prev{
+            height: 56px;
+            .ui-icon{
+              background-image: url("../images/icon-pre.png");
+              background-position: center;
+            }
+          }
+          .ui-datepicker-next{
+            height: 56px;
+            .ui-icon{
+              background-image: url("../images/icon-next.png");
+              background-position: center;
+            }
+          }
+        }
+      }
+      .ui-widget-content{
+        a{
+          color: $navy-blue;
+          border: none;
+          text-align: center;
+          padding: 4px 2px;
+        }
+        .ui-state-highlight{
+          background: #f91729;
+          color: $white2;
+        }
+        .ui-state-active{
+          background: transparent;
+          font-family: $bold;
+          &.ui-state-highlight{
+            background: #f91729;
+            color: $white2;
+          }
+        }
+      }
+      .ui-datepicker{
+        .ui-datepicker-prev-hover{
+          left: 2px;
+          top: 2px;
+        }
+        .ui-datepicker-next-hover{
+          right: 2px;
+          top: 2px;
+        }
+        .ui-datepicker-title{
+          font-family: $bold;
+          line-height: 60px;
+        }
+        table{
+          font-size: 13px;
+          thead{
+            font-family: $bold;
+            text-transform: uppercase;
+          }
+          tbody{
+            border: none;
+            .highlight{
+              a{
+                position: relative;
+                display: block;
+                &:before{
+                  content: '';
+                  width: 6px;
+                  height: 6px;
+                  display: block;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: 0 auto;
+                  background: #c9c9c9;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .events-calendar-detail-68{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      z-index: 9;
+      .list-event-detail-68{
+        max-height: 445px;
+        //max-height: 200px;
+        overflow: hidden;
+        overflow-y: auto;
+        .close-calendar{
+          position: absolute;
+          top: 0;
+          right: 15px;
+          font-size: 20px;
+          color: #071237;
+          display: block;
+          z-index: 10;
+          width: 30px;
+          text-align: center;
+          @include hover{
+            text-decoration: none;
+          }
+        }
+        .event-detail-68{
+          background: $white2;
+          padding: 20px 60px 0 20px;
+          border-bottom: 5px solid #071237;
+          position: relative;
+          .title{
+            font-family: $bold;
+            font-size: 16px;
+            text-transform: uppercase;
+          }
+          .description{
+            font-size: 15px;
+          }
+          .link{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 40px;
+            a{
+              display: block;
+              &:before{
+                content: '+';
+                display: block;
+                position: relative;
+                width: 55px;
+                height: 55px;
+                background: #071237;
+                color: $white2;
+                text-align: center;
+                line-height: 55px;
+              }
+              @include hover{
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.list-youtube-68{
+  background: $light-grey;
+  margin-top: -16px;
+  padding-bottom: 16px;
+  @include clearfix;
+  .RYPP{
+    width: 100%;
+    margin: 0 auto;
+    font-family: $regular;
+    background: $white2;
+    max-width: 956px;
+    padding: 6px 309px 0 8px;
+    @include breakpoint(medium only) {
+      padding: 6px 341px 0 32px;
+    }
+    @include breakpoint(small down) {
+      padding: 6px 67px 0 67px;
+    }
+
+    .RYPP-video{
+
+    }
+    .RYPP-playlist{
+      width: 303px;
+      right: 8px;
+      background: #f5f5f5;
+      top: 6px;
+      @include breakpoint(large up){
+        top: 6px;
+        right: 8px;
+      }
+      @include breakpoint(medium only){
+        top: 6px;
+        right: 32px;
+      }
+      @include breakpoint(small down){
+        top: 6px;
+        right: 0;
+        position: relative;
+        width: 100%;
+        bottom: auto;
+      }
+      > header{
+        background: $grey-bg;
+        padding: 5px 15px 0;
+        border: none;
+        ._h1{
+          line-height: 18px;
+          text-transform: none;
+          color: $navy-blue;
+        }
+        p{
+          line-height: 12px;
+          color: $navy-blue;
+        }
+      }
+    }
+    .RYPP-items{
+      @include breakpoint(small down){
+        position: relative;
+        height: 400px;
+      }
+      ol{
+        @include breakpoint(small down){
+          margin-bottom: 64px;
+        }
+        li{
+          > p{
+            color: $navy-blue;
+            line-height: 14px;
+            > small{
+              color: $navy-blue;
+            }
+          }
+          &.selected{
+            > p{
+              color: $white2;
+              > small{
+                color: $white2;
+              }
+            }
+          }
+          @include hover{
+            > p{
+              color: $white2;
+              > small{
+                color: $white2;
+              }
+            }
+          }
+          &:before{
+            width: 12px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(large up) {
+    .RYPP {
+      @include grid-column(12);
+      @include grid-column-offset(2);
+      @include grid-column-end;
+      padding: 6px 309px 0 8px !important;
+    }
+  }
+}

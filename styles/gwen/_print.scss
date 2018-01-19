@@ -1,0 +1,13 @@
+
+/* header displayed on print only */
+.header-print {
+    display: none;
+    max-width: 1180px;
+    padding: 0 41px;
+    margin: 0 auto;
+
+    div {
+        float: right;
+        color: #111a44;
+    }
+}

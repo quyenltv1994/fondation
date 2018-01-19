@@ -1,0 +1,82 @@
+.unproject__home{
+  margin-bottom: 105px;
+  .title{
+    max-width: 1134px;
+    margin:0 auto;
+    margin-bottom: 57px;
+    @media screen and (min-width: $tablet-medium){
+      margin-left: 50px;
+    }
+    @media screen and (min-width: $desktop-medium){
+      margin-left: auto;
+    }
+  }
+  .wrapper{
+    max-width: $maxsize;
+  }
+  &--item{
+    @media screen and (min-width: $tablet-medium) {
+      @include display-flex();
+    }
+    @media screen and (min-width: $desktop-medium) {
+      margin: 0 43px;
+    }
+    .image{
+      width: 100%;
+      min-height: 260px;
+      background-size: cover;
+      background-position: center center;
+      @media screen and (min-width: $tablet-medium){
+        width: 50%;
+      }
+      img{
+        display: block;
+      }
+    }
+    &--content{
+      width: 100%;
+      background: $navy-blue;
+      padding:63px 45px 60px 47px;
+      position: relative;
+      @media screen and (min-width: $tablet-medium){
+        width: 50%;
+        padding:63px 45px 60px 85px;
+      }
+      @media screen and (min-width: $desktop-small){
+        padding:63px 120px 60px 85px;
+      }
+      .button_read__more{
+        position: absolute;
+        left:0;
+        bottom:-33px;
+        padding:0 0 0 35px;
+        background: $color-readmore;
+        margin:0;
+        width: 100%;
+        @media screen and (min-width: $desktop-medium){
+          width: calc(100% + 43px);
+        }
+        .read__more{
+          color:$white;
+          @include display-flex();
+          height: 65px;
+          align-items: center;
+          width: 100%;
+          &:before{
+            border-left-color: $white;
+          }
+          &:after{
+            background: $white;
+          }
+        }
+      }
+    }
+    &-title{
+      font-size: 32px;
+      font-family: $font-bold;
+      color:$white;
+      line-height: 40px;
+      margin-bottom: 23px;
+    }
+  }
+}

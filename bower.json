@@ -1,0 +1,31 @@
+{
+  "name": "TemplateIntegration",
+  "description": "",
+  "main": "README.md",
+  "authors": [
+    "fidesio"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.7",
+    "fastclick": "~1.0.6",
+    "PACE": "pace#~1.0.2",
+    "jquery": "~3.1.1",
+    "fontfaceobserver": "~2.0.7",
+    "loadcss": "~1.2.1",
+    "flexslider" :"~2.6.4"
+  }
+}
+

@@ -1,0 +1,61 @@
+@import "common/variables";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/foundation-sites/scss/foundation.scss";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+// endbower
+@import "settings";
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-reveal;
+// @include foundation-tabs;
+
+// @include foundation-everything;
+@import "common/global";
+@import "common/fonts";
+//utils
+@import "utils/print";
+@import "utils/debug";
+@import "common/mixins";
+
+@import "components/slick";
+
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/sidebar";
+@import "layouts/page";
+@import "layouts/press";
+@import "layouts/404";
+@import "layouts/home";
+@import "layouts/complex";
+@import "layouts/contact";
+@import "layouts/hub";
+@import "layouts/search";
+@import "layouts/accordion";
+@import "layouts/joon";
+@import "layouts/emploi";
+
+//components
+@import "components/icons";
+@import "components/inputs";
+@import "components/buttons";
+@import "components/nodes";
+@import "components/bloc";
+@import "components/flickity";
+
+
+// pagination
+@import "components/pager"; 
+
+// image bandeau
+@import "components/cover";
+
+

@@ -1,0 +1,44 @@
+.test-grille {
+	background-color:pink;
+	height:100px;
+	overflow-x:hidden;
+	.rangee {
+		@include grid-row(16);
+		.colonne {
+			@include grid-column(1);
+			background-color:yellow;
+			.content {
+				background-color: darken(yellow, 20);
+				height: 100px;
+			}
+			&:nth-of-type(even) {
+				background-color:blue;
+				.content {
+					background-color:lighten(blue, 20);
+				}
+			}
+		}
+	}
+}
+
+// .content--grid {
+// 	background-color:pink; //debug
+// 	.block--row {
+// 		background-color:azure; //debug
+// 		.block--column {
+// 			background-color:blue;
+// 			.block--content {
+// 				background-color:lighten(blue, 30);
+// 			}
+// 			&:nth-of-type(even) {
+// 				background-color:orange;
+// 				.block--content {
+// 					background-color:lighten(orange, 30);
+// 				}
+// 			}
+// 		}	
+// 		&:nth-of-type(even) {
+// 			background-color:darken(crimson, 30); //debug
+// 		}
+// 	}
+// }

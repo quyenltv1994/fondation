@@ -1,0 +1,16 @@
+.node-type-accordion-page {
+  .page-content {
+    @include breakpoint(small only) {
+      float: none !important;
+    }
+  }
+  .side-content {
+    @include breakpoint(small only) {
+      width: auto;
+      margin: 0 6.75% !important;
+    }
+  }
+  [id=block-system-main] {
+    box-shadow: none;
+  }
+}

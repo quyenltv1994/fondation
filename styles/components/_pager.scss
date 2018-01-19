@@ -1,0 +1,75 @@
+ul.pager {
+	margin: 40px 0;
+	border:1px solid #f2f2f2;
+	padding: 15px 0;
+	font-size: 0;
+	vertical-align:top;
+	li {
+		display: inline-block !important;
+		margin: 0 7px 0 0!important;
+		padding:0.5rem 4px !important;
+		font-size: 1rem;
+		font-family: $bold;
+		
+		line-height: 1rem;
+		background: none;
+		color:$navy-blue;
+		border:1px solid transparent;
+		&.pager-current {
+			padding:8px 13px !important;
+		}
+		a {
+			padding:8px !important;
+		}
+
+		&.pager-current {
+			background-color:$navy-blue;
+			border:1px solid $navy-blue;
+			color:white;
+		}
+		&:not(.pager-current):hover {
+			background-color:white;
+			border:1px solid $navy-blue;
+			a {
+				color:$navy-blue;
+				text-decoration: none;
+			}
+		}
+		&.pager-next, &.pager-previous, &.pager-last, &.pager-first {
+			a {
+				color:$red;
+				&:before, &:after {
+					font-family: 'icomoon';
+				}
+			}
+		}
+		&.pager-next {
+			a {
+				&:before {
+				content: '\e80a';
+				}
+			}
+		}
+		&.pager-previous {
+			a {
+				&:after {
+				content: '\e80b';
+				}
+			}
+		}
+        &.pager-last {
+			a {
+				&:before {
+				content: '\e80a\e80a';
+				}
+			}
+		}
+        &.pager-first {
+			a {
+				&:after {
+				content: '\e80b\e80b';
+				}
+			}
+		}
+	}
+}

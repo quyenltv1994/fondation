@@ -1,0 +1,40 @@
+/* Extend buttons css
+-------------------------------------------------------------- */
+%small {
+  padding: 10px;
+}
+
+%medium {
+  padding: 10px 30px;
+}
+
+%large {
+  padding: 10px 50px;
+}
+
+/* Global buttons css
+-------------------------------------------------------------- */
+button,
+.button {
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
+  color: $white;
+  background: $maincolor;
+
+  @include hover {
+
+  }
+
+  &__small {
+    @extend %small;
+  }
+
+  &__medium {
+    @extend %medium;
+  }
+
+  &__large {
+    @extend %large;
+  }
+} 

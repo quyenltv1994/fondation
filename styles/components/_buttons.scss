@@ -1,0 +1,225 @@
+.tab-button {
+	text-transform: uppercase;
+	font-family: $bold;
+	@include ie-bold();
+	color:$navy-blue;
+	font-size: 13px;
+	display:inline-flex;
+	margin-bottom: 1px;
+	.content {
+		display: inline-flex;
+		flex-direction: row;
+		align-items:center;
+		.icon {
+			min-width: 40px;
+			height: 40px;
+			background-color:$red;
+			color:white;
+			position:relative;
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
+			&:before {
+				content: '\e809';
+				font-family: 'icomoon';
+				color:white;
+				font-size: 9px;
+			}
+			&:after {
+				content:'';
+				width:0px;
+				background-color:$red;
+				height: 40px;
+			}
+			.arrow {
+				&:after, &:before {
+					content:'';
+				}
+				&:after {
+					width: 10px;
+					height: 1px;
+					background-color:white;
+				}
+			}
+		}
+		.title {
+			padding:0 20px;
+			max-width: calc(100% - 40px);
+		}
+	}
+	&:hover {
+		text-decoration: none !important;
+	}
+}
+
+.tabs-title {
+	&:hover {
+		&:not(.is-active) {
+			.tab-button {
+				.icon {
+					&:after {
+						width: 10px;
+						position: absolute;
+						right: -10px;
+						top: 0;
+					}
+				}
+			}	
+		}
+	}
+}
+
+.is-active {
+	.tab-button {
+		.content {
+			color:white;
+			background-color:$navy-blue;
+			.icon {
+				background-color:transparent;
+			}
+		}
+	}
+}
+.button {
+	text-transform: uppercase;
+	font-size:13px;
+	font-family: $bold;
+	@include ie-bold();
+	
+	background-color: $navy-blue;
+	color:white;
+	position:relative;
+	line-height:1;
+	transition:none;
+	border:none;
+	
+	padding:0;
+	display:flex;
+	// transition: all .1s;
+	.content {
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		width: 100%;
+	}
+	.title {
+		border:1px solid $navy-blue;
+		flex:1;
+		padding:10px;
+		// max-width: calc(100% - 33px);
+		text-align: left;
+	}
+	.icon {
+		width: 33px;
+		background-color:$red;
+		border:1px solid $red;
+	}
+	&:hover {
+		background-color:white;
+		color: $navy-blue;
+		text-decoration: none;
+		.title {
+			border:1px solid $navy-blue;
+		}
+		.icon {
+			background-color: $navy-blue;
+			border:1px solid $navy-blue;
+			color:white;
+			&:after {
+				content:white;
+			}
+		}
+	}
+	&.plus {
+		.icon {
+			position:relative;
+			&:after {
+				content:'+';
+				font-size:22px;
+				line-height: 1;
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform: translateX(-50%) translateY(-56%);
+			}
+		}
+	}
+	&.rss {
+		.icon {
+			position:relative;
+			&:after {
+			    font-family: icomoon;
+				position:absolute;
+			    font-size: 18px;
+			    content: '\e808';
+			    top:50%;
+				left:50%;
+				transform: translateX(-50%) translateY(-56%);
+			}
+		}
+	}
+
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { //ie 10 - 11 hack
+		display: block;
+		.content {
+			position:relative;
+			display: block;
+			.title, .icon {
+				display: block;
+			}
+			.icon {
+				position:absolute;
+				top:0;
+				right: 0;
+				bottom:0;
+			}
+			.title {
+				padding: 10px 43px 10px 10px;
+			}
+		}
+	}
+}
+.mini {
+	display:block;
+	width:33px;
+	height:33px;
+	color:white;
+	font-size:13px;
+	font-family: $bold;
+	@include ie-bold();
+	
+	.content {
+		height: 100%;
+		width: 100%;
+		display: block;
+	}
+	.title {
+		display: none;
+	}
+	.icon {
+		width: 33px;
+		height: 33px;
+		background-color:$red;
+		display: block;
+	}
+	&.plus {
+		.icon {
+			position:relative;
+			&:after {
+				content:'+';
+				font-size:22px;
+				top:50%;
+				left:50%;
+				transform: translateX(-50%) translateY(-56%);
+				position:absolute;
+			}
+		}
+	}
+	&:hover {
+		color: transparent;
+		.icon {
+			background-color:$navy-blue;
+			color:white;
+		}
+	}
+}

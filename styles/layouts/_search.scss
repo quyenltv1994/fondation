@@ -1,0 +1,175 @@
+.main-search .search-input {
+  &.has-error {
+    border-bottom: 1px solid $red !important;
+  }
+}
+
+.view-search {
+  .views-row-odd {
+    background-color: $grey-bg;
+  }
+}
+
+.SearchResult {
+  padding: 25px 80px;
+  a,
+  a:hover {
+    text-decoration: none;
+    color: $navy-blue;
+  }
+}
+
+.SearchResult-header {
+  position: relative;
+  &:before {
+    font-family: icomoon;
+    content: '\e809';
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
+
+.SearchResult-title {
+  text-transform: none !important;
+  margin: 8px 0 5px !important;
+  font-size: 1rem !important;
+  .SearchResult a:hover & {
+    color: $red;
+  }
+}
+
+.Search-pattern {
+  display: inline-block;
+  padding: 1px 4px;
+  background-color: $navy-blue;
+  color: #ffffff;
+}
+
+.page-search {
+  .side-content {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include breakpoint(medium down) {
+      padding: 0 7%;
+    }
+    @include breakpoint(medium up) {
+      display: block;
+      clear: none;
+    }
+    > section {
+      flex: 1;
+      &:first-of-type {
+        @include breakpoint(medium down) {
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+  .views-exposed-widgets {
+    position: relative;
+    @include breakpoint(medium up) {
+      padding-top: 31px;
+    }
+    [type=text] {
+      margin-bottom: 5px;
+      padding-right: 39px;
+      width: 227px;
+      &.has-error {
+        border-color: $red;
+      }
+    }
+  }
+  .views-exposed-widget {
+    padding: 0;
+  }
+  .views-submit-button {
+    position: absolute;
+    z-index: 0;
+    left: 188px;
+    [type="submit"] {
+      border: none;
+      width: 39px;
+      height: 39px;
+      margin: 0;
+      background: url('../images/icon-search.png') no-repeat;
+      background-size: contain;
+      color: transparent;
+    }
+  }
+  .pager {
+    span {
+      display: none;
+    }
+  }
+}
+
+.page-search
+.js-search-keywordMissing {
+  color: $red;
+  font-size: 12px;
+}
+
+.block-airfrance-search {
+  @include breakpoint(medium down) {
+    margin-left: 50px;
+  }
+}
+
+.SearchPage-filters {
+  display: flex;
+  justify-content: space-between;
+
+  @include breakpoint(medium up) {
+    display: block;
+  }
+}
+.SearchPage-filter-title {
+  @include breakpoint(medium down) {
+    margin-top: 0 !important;
+  }
+}
+// Overspecific selector to force styles.
+.side-content .block .item-list .SearchPage-filter {
+
+  li {
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-family: $bold;
+    @include ie-bold();
+    &:before {
+      left: 7px;
+      top: 4px;
+    }
+    &.noResult {
+      color: #c2c2c2;
+      &:before {
+        color: #c2c2c2;
+      }
+
+    }
+  }
+  .first.last {
+    padding-bottom: 0;
+  }
+  li ul {
+    padding: 5px 0 0 5px;
+  }
+
+  li .item-list li {
+    margin-left: 0;
+    padding-left: 5px;
+    &:before {
+      left: -20px;
+      top: 4px;
+    }
+  }
+  .Search-filter--noResult {
+    color: #C2C2C2;
+
+  }
+}

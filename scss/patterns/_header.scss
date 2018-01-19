@@ -1,0 +1,156 @@
+/* Header css
+ ----------------------------------------------------------------------------------------------------*/
+.header {
+  @include clearfix;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: rgba($dark, .3);
+  border-bottom: 2px solid rgba($white, .3);
+  font-family: $font-bold;
+  .wrapper{
+    max-width: 955px;
+    @media screen and (min-width: $desktop-medium) {
+      display: flex;
+      align-items: center;
+      max-width: $container;
+    }
+  }
+  &__logo {
+    @include clearfix;
+    overflow: hidden;
+    max-height: 93px;
+    @media screen and (min-width: $tablet-lage){
+      max-width: 175px;
+      position: absolute;
+      margin-top: 5px;
+    }
+    @media screen and (min-width: $desktop-medium){
+      max-width: 287px;
+      padding-left: 17px;
+      position: inherit;
+    }
+    width:100%;
+    &-link {
+      float: left;
+      transition:all 1s;
+    }
+  }
+  &__right{
+    width: 100%;
+    &--top{
+      transition: all 1s;
+      height: 85px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      @media screen and (min-width: $desktop-medium - 1px){
+        height: 85px !important;
+      }
+      ul{
+        list-style: none;
+        margin-bottom: 0;
+        li{
+          display: inline-block;
+          text-transform: uppercase;
+          font-size: 12px;
+          &:first-child{
+            margin-right: 34px;
+          }
+          .language{
+            margin:0 -6px;
+            li{
+              margin:0;
+              padding:6px;
+              &:first-child{
+                padding-right:7px;
+                position: relative;
+                &:after{
+                  content:"";
+                  height:12px;
+                  width: 1px;
+                  background: $white;
+                  position: absolute;
+                  top:8px;
+                  right:-2px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &--bottom{
+      border-top: 1px solid rgba($white, .3);
+      @include display-flex();
+      flex-wrap: wrap;
+      .search{
+        display: flex;
+        align-items: center;
+        .search__icon{
+          font-family: icomoon;
+          text-align: center;
+          width: 60px;
+          position: relative;
+          i{
+            display: block;
+            color:$white;
+            cursor: pointer;
+            border-left: 1px solid rgba($white, .3);
+            &:before{
+              content: "\e807";
+              font-size: 18px;
+              font-style: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__img {
+    margin: 0 auto 20px;
+  }
+  &.sticky{
+    border-bottom-color: $navy-blue);
+    background: $white;
+    .header__logo-link{
+      transform: translateY(-100%);
+    }
+    .header__right--top{
+      @media screen and (min-width: $desktop-medium){
+        height:55px;
+      }
+      ul{
+        li{
+          a{
+            color:$navy-blue;
+          }
+          .language{
+            li:first-child:after{
+              background: $navy-blue;
+            }
+          }
+        }
+      }
+    }
+    .header__right--bottom{
+      border-top-color: $navy-blue;
+      .search{
+        &__icon{
+          i{
+            color:$navy-blue;
+            border-left-color:$navy-blue;
+          }
+        }
+      }
+    }
+    .sf-menu{
+      li{
+        a{
+          color:$navy-blue;
+        }
+      }
+    }
+  }
+}

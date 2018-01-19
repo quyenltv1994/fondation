@@ -1,0 +1,103 @@
+/* Ember overrides of Media module CSS */
+
+// Import the common includes for all files.
+@import "reset";
+@import "contrib/media";
+@import "variables";
+@import "common";
+@import "print";
+
+/* main container styles */
+#wrapper{
+  position:relative;
+  width:100%;
+  overflow:hidden;
+}
+
+header {
+    min-height:30px;
+    color:$white;
+
+    .panel{
+        background:$dark-blue;
+        font:11px/14px Arial, Helvetica, sans-serif;
+
+        a {
+            color:$white;
+        }
+
+        .block {
+            float: left;
+        }
+    }
+}
+
+/* page logo styles */
+.logo{
+  float:left;
+  width:271px;
+}
+.logo img{vertical-align:top;}
+
+/* header styles */
+.section-holder{
+  max-width:1182px;
+  margin:0 auto;
+  padding:0 41px;
+}
+.section-holder:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+#header .panel .block + .block + .block {
+  float: left;
+}
+/* profils list styles */
+.profils{float:left;}
+.profils .title{
+  float:left;
+  text-transform:uppercase;
+  color:#fff;
+  font-size:10px;
+  line-height:14px;
+  font-weight:normal;
+  padding:8px 19px 8px 16px;
+  position:relative;
+  background:#04a1e5;
+  margin:0 23px 0 0;
+  height:30px;
+}
+.profils .title:before{
+  content:"";
+  position:absolute;
+  left:100%;
+  top:50%;
+  margin:-6px 0 0 -1px;
+  width:0;
+  height:0;
+  border-left:8px solid #04a1e5;
+  border-top:6px solid transparent;
+  border-bottom:6px solid transparent;
+}
+.profils ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  float:left;
+  font-size:12px;
+  line-height:16px;
+}
+.profils ul li{
+  float:left;
+  padding:7px 0;
+}
+.profils ul li + li{
+  padding:7px 0 7px 11px;
+}
+.profils a{color:#a8a8a8;}
+.profils a:hover{
+  text-decoration:none;
+  color:#04a1e5;
+}

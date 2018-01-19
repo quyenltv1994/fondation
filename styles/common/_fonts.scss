@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'excellence_in_motion_black';
+    src: url('../fonts/excellenceinmotion_black_v4_h-webfont.eot');
+    src: url('../fonts/excellenceinmotion_black_v4_h-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/excellenceinmotion_black_v4_h-webfont.woff2') format('woff2'),
+         url('../fonts/excellenceinmotion_black_v4_h-webfont.woff') format('woff'),
+         url('../fonts/excellenceinmotion_black_v4_h-webfont.ttf') format('truetype'),
+         url('../fonts/excellenceinmotion_black_v4_h-webfont.svg#excellence_in_motion_v4black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'excellence_in_motion_bold';
+    src: url('../fonts/excellenceinmotion_bold_v4_h-webfont.eot');
+    src: url('../fonts/excellenceinmotion_bold_v4_h-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/excellenceinmotion_bold_v4_h-webfont.woff2') format('woff2'),
+         url('../fonts/excellenceinmotion_bold_v4_h-webfont.woff') format('woff'),
+         url('../fonts/excellenceinmotion_bold_v4_h-webfont.ttf') format('truetype'),
+         url('../fonts/excellenceinmotion_bold_v4_h-webfont.svg#excellence_in_motion_v4bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'excellence_in_motion_medium';
+    src: url('../fonts/excellenceinmotion_medium_v4_h-webfont.eot');
+    src: url('../fonts/excellenceinmotion_medium_v4_h-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/excellenceinmotion_medium_v4_h-webfont.woff2') format('woff2'),
+         url('../fonts/excellenceinmotion_medium_v4_h-webfont.woff') format('woff'),
+         url('../fonts/excellenceinmotion_medium_v4_h-webfont.ttf') format('truetype'),
+         url('../fonts/excellenceinmotion_medium_v4_h-webfont.svg#excellence_in_motion_v4medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'excellence_in_motion';
+    src: url('../fonts/excellenceinmotion_regular_v4_h-webfont.eot');
+    src: url('../fonts/excellenceinmotion_regular_v4_h-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/excellenceinmotion_regular_v4_h-webfont.woff2') format('woff2'),
+         url('../fonts/excellenceinmotion_regular_v4_h-webfont.woff') format('woff'),
+         url('../fonts/excellenceinmotion_regular_v4_h-webfont.ttf') format('truetype'),
+         url('../fonts/excellenceinmotion_regular_v4_h-webfont.svg#excellence_in_motion_v4Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'excellence_in_motion_thin';
+    src: url('../fonts/excellenceinmotion_thin_v4_h-webfont.eot');
+    src: url('../fonts/excellenceinmotion_thin_v4_h-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/excellenceinmotion_thin_v4_h-webfont.woff2') format('woff2'),
+         url('../fonts/excellenceinmotion_thin_v4_h-webfont.woff') format('woff'),
+         url('../fonts/excellenceinmotion_thin_v4_h-webfont.ttf') format('truetype'),
+         url('../fonts/excellenceinmotion_thin_v4_h-webfont.svg#excellence_in_motion_v4thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'excellence_in_touch_beta';
+    src: url('excellenceintouchbeta_h-webfont.eot');
+    src: url('excellenceintouchbeta_h-webfont.eot?#iefix') format('embedded-opentype'),
+         url('excellenceintouchbeta_h-webfont.woff2') format('woff2'),
+         url('excellenceintouchbeta_h-webfont.woff') format('woff'),
+         url('excellenceintouchbeta_h-webfont.ttf') format('truetype'),
+         url('excellenceintouchbeta_h-webfont.svg#excellence_in_touch_beta_16Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    text-rendering: optimizeLegibility; 
+    -webkit-font-smoothing: antialiased;
+}
+
+$regular: 'excellence_in_motion', 'Open Sans', sans-serif;
+$thin: 'excellence_in_motion_thin', 'Open Sans', sans-serif;
+$beta: 'excellence_in_motion_beta', 'Open Sans', sans-serif;
+$medium: 'excellence_in_motion_medium', 'Open Sans', sans-serif;
+$bold: 'excellence_in_motion_bold', 'Open Sans', sans-serif;
+$black: 'excellence_in_motion_black', 'Open Sans', sans-serif;

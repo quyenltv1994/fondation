@@ -1,0 +1,53 @@
+/* Main Layout
+----------------------------------------------------------------------------------------------------*/
+.wrapper {
+  padding: 0 15px;
+  position: relative;
+  margin: 0 auto;
+  max-width: $container;
+  width: 100%;
+  @include clearfix;
+}
+
+.wrapper-max{
+  padding: 0 15px;
+  position: relative;
+  margin: 0 auto;
+  max-width: $maxsize;
+  width: 100%;
+  @include clearfix;
+}
+
+.row {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+  @include clearfix;
+}
+
+.col {
+  @for $i from 1 through 12 {
+    &-#{$i} {
+      width: 100%;
+      padding: 0 15px;
+      position: relative;
+      margin-bottom: 15px;
+      @include clearfix;
+
+      @media screen and (min-width: $tablet-medium) {
+        float: left;
+        width: 100% / 12 * $i;
+      }
+    }
+  }
+}
+
+.hidden{
+
+  &-xs{
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}

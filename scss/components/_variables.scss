@@ -1,0 +1,37 @@
+// Container
+$container: 1250px;
+$maxsize: 1396px;
+
+//Fonts
+$font-sansserif: Arial, Helvetica, sans-serif;
+$font-serif: Times, Georgia, serif;
+$font-main : excellenceinmotion_regular;
+$font-bold: excellenceinmotion_bold;
+$font-medium: excellenceinmotion_medium;
+$googlefont-1: Roboto, sans-serif;
+
+// Font Sizes
+$base-font-size: 18px;
+
+// Line height
+$base-line-height: 1.4;
+$heading-line-height: 1.2;
+
+//Colors
+$maincolor: #f2f2f2;
+$textcolor: #737373;
+$color-title : #051039;
+$color-bold: #353535;
+$color-hover: #ff1111;
+$white: #fff;
+$dark: #000;
+$navy-blue: #051039;
+$red: #ff0d0d;
+$color-readmore: #0062e6;
+
+//Breakpoint
+$mobile-small: 480px;
+$tablet-medium: 768px;
+$tablet-lage:992px;
+$desktop-small: 1024px;
+$desktop-medium: 1260px;

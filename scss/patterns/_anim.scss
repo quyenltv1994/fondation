@@ -1,0 +1,127 @@
+/* Animations view
+----------------------------------------------------------------------------------------------------*/
+.view {
+  overflow: hidden;
+
+  [class^='col-'] {
+    @include opacity(0);
+    @include transform (translate(0, 125px));
+  }
+
+  /* Animations view-on
+  ----------------------------------------------------------------------------------------------------*/
+
+  &-on {
+
+    [class^='col-'] {
+      @include opacity(1);
+      @include transform (translate(0, 0));
+      @include transition (all 2s cubic-bezier(.19, 1, .22, 1));
+    }
+
+    .col {
+      @for $i from 1 through 6 {
+        &-#{$i} {
+          @for $ii from 1 through 6 {
+            &:nth-child(#{$ii}) {
+              @include transition-delay(.25s * $ii);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Page load - anim border top
+----------------------------------------------------------------------------------------------------*/
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  &-inactive {
+    display: none;
+  }
+
+  .pace-progress {
+    background: $maincolor;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
+  }
+}
+
+/* Lazy load img
+----------------------------------------------------------------------------------------------------*/
+//.lazy {
+//
+//  &-anim {
+//    @include opacity(0);
+//  }
+//
+//  &-on {
+//    @include opacity(1);
+//    @include transition (all 2s cubic-bezier(.19, 1, .22, 1));
+//  }
+//}
+
+/* Page scroll header
+----------------------------------------------------------------------------------------------------*/
+//.intro-effect-push {
+//
+//  .header {
+//    position: absolute;
+//    z-index: 1500;
+//    height: 100vh;
+//    width: 100%;
+//  }
+//
+//  #main__content {
+//    @include transform (translate(0, 400px));
+//    @include opacity(0);
+//  }
+//
+//  &:not(.notrans) {
+//
+//    .header,
+//    #main__content {
+//      -webkit-transition-property: opacity, -webkit-transform;
+//      transition-property: opacity, transform;
+//      -webkit-transition-duration: 1s;
+//      transition-duration: 1s;
+//    }
+//
+//    .header {
+//      -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+//      transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+//      -webkit-transition-duration: 1.2s;
+//      transition-duration: 1.2s;
+//    }
+//  }
+//
+//  &.modify {
+//
+//    .header {
+//      @include opacity(0);
+//      -webkit-transform: translateY(-100%) scale(0.9);
+//      transform: translateY(-100%) scale(0.9);
+//    }
+//
+//    #main__content {
+//      @include transform (translate(0, 0));
+//      @include opacity(1);
+//    }
+//
+//    &:not(.notrans) {
+//      #main__content {
+//        @include transition-delay(.5s);
+//      }
+//    }
+//  }
+//}
