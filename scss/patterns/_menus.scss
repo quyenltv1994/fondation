@@ -115,33 +115,28 @@
 
 /* Menus - tablette/pc
 ----------------------------------------------------------------------------------------------------*/
-.menu {
+.main-menu {
   z-index: 998;
-  position: fixed;
-  top: 0;
-  left: -100%;
-  bottom: 0;
-  width: 80%;
-  padding: 40px 0;
-  background: $white;
-  overflow-y: auto;
+  width: 100%;
+  padding: 10px 0;
   -webkit-overflow-scrolling: touch;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0);
   @include clearfix;
   @include transition (left 0.5s ease-out);
-
+  @media screen and (min-width: $tablet-lage) {
+    padding: 40px 0;
+  }
   &.opened {
     left: 0;
     box-shadow: 0 0 100px rgba($dark, 0.5);
   }
-
   .wrapper {
     padding: 0;
-    height:50px;
     @media screen and (min-width: $tablet-lage) {
       display: flex;
       align-items: center;
+      height:50px;
     }
   }
 
@@ -167,7 +162,7 @@
           color: $color-hover;
         }
         @media screen and (max-width: $tablet-lage - 1px){
-          color: $color-readmore;
+          color: $navy-blue;
           padding:10px;
           font-size: 20px;
         }
@@ -224,9 +219,7 @@
         top: 100%;
         position: absolute;
         background: $white;
-
         li {
-
           a {
             @include hover {
               color: $white;

@@ -39,11 +39,28 @@ var FConvention = (function ($, window, undefined) {
             })
         }
 
+        //search visible
+        function _searchVisible(){
+            $(".search__icon").click(function(){
+                if($(this).hasClass("is-visible")){
+                    $(".search__input .search-input").removeClass("is-visible");
+                    $(".search-holder").removeClass("is-visible");
+                    $(this).removeClass("is-visible");
+                }else{
+                    $(".search__input .search-input").addClass("is-visible");
+                    $(".search-holder").addClass("is-visible");
+                    $(this).addClass("is-visible");
+                }
+
+            })
+        }
+
         return {
             init: function () {
                 _sliderHome();
                 _scrollDownMouse();
                 _scrollDown();
+                _searchVisible();
             }
         };
     }

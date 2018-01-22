@@ -15,7 +15,7 @@ if (matchMedia('(max-width: 1023px)').matches) {
         "click",
         function (e) {
             e.preventDefault();
-            jQuery(".menu__mobile").toggleClass("opened");
+            jQuery(".header__right").toggleClass("opened");
             jQuery("html, body").toggleClass("menu-mobile--active");
             jQuery(this).toggleClass("open");
         }
@@ -26,7 +26,7 @@ if (matchMedia('(max-width: 1023px)').matches) {
 if (matchMedia('(min-width: 1024px) and (orientation:landscape)').matches) {
     //console.log("over 1024px");
     //restore mobile menu in desktop
-    jQuery(".menu__mobile").removeClass("opened");
+    jQuery(".header__right").removeClass("opened");
     jQuery("html, body").removeClass("menu-mobile--active");
 }
 

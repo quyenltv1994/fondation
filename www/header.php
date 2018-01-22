@@ -65,7 +65,6 @@
                 <span></span>
             </button>
         </div>
-
         <div class="wrapper">
             <div class="header__logo">
                 <a href="#" class="header__logo-link logo__default">
@@ -77,41 +76,51 @@
             </div>
             <div class="header__right">
                 <div class="header__right--top">
-                    <ul>
-                        <li><a href="">Nous Contacter</a></li>
-                        <li>
-                            <ul class="language">
-                                <li><a href="">fr</a></li>
-                                <li><a href="">en</a></li>
+                    <div class="header__right--top--main">
+                        <section id="block-base-contact-us" class=" block block-base contextual-links-region">
+                            <!-- bloc contact us -->
+                            <div class="contact-us">
+                                <a href="/fr/contact">Nous contacter</a></div>
+                        </section>
+
+                        <section id="block-locale-language" class=" block block-locale contextual-links-region">
+                            <ul class="language-switcher-locale-url"><li class="fr first active"><a href="/fr" class="language-link active" xml:lang="fr"><abbr title="Français">fr</abbr></a></li>
+                                <li class="en-gb last"><a href="/en" class="language-link" xml:lang="en-gb"><abbr title="English, British">en</abbr></a></li>
                             </ul>
-                        </li>
-                    </ul>
+                        </section>
+                    </div>
                 </div>
                 <div class="header__right--bottom">
-                    <nav id="menu" class="menu menu__mobile" role="navigation" itemscope
-                         itemtype="http://schema.org/SiteNavigationElement">
-                        <div class="wrapper">
-                            <ul class="sf-menu">
-                                <li>
-                                    <a href="01-home.php">la fondation</a>
-                                </li>
-                                <li class="current-menu-item"><a href="#">Nos projets</a></li>
-                                <li><a href="#">Nos actualités</a></li>
-                                <li><a href="#">ressource presse</a></li>
-                                <li><a href="#">espace association</a></li>
-                                <li><a href="#">espace salarié</a></li>
-                            </ul>
+                    <section id="block-menu-block-main" class=" block block-menu-block menu__mobile main-menu contextual-links-region contextual-links-region">
+                        <nav id="menu">
+                            <div class="wrapper">
+                                <ul class="menu"><li class="first leaf menu-mlid-3626"><a href="/fr/la-compagnie" title="">La Fondation</a></li>
+                                    <li class="leaf menu-mlid-3627"><a href="/fr/engagements" title="">Nos Projets</a></li>
+                                    <li class="leaf menu-mlid-3630"><a href="/fr/actualites" title="">Nos Actualités</a></li>
+                                    <li class="leaf menu-mlid-3632"><a href="/fr/presse" title="">Ressource Presse</a></li>
+                                    <li class="leaf menu-mlid-3631"><a href="/fr/emploi" title="">Espace Association</a></li>
+                                    <li class="last leaf menu-mlid-4855"><a href="/fr/la-compagnie" title="">Espace Salarié</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </section>
+                    <section id="block-base-searchtop" class="search block block-base contextual-links-region contextual-links-region">
+                        <div class="main-search">
+                            <div class="search__input">
+                                <form method="get" action="">
+                                    <input class="search-input" placeholder="Tapez votre recherche" type="search" value="" name="search_api_views_fulltext" id="keys">
+                                    <input class="search-submit" type="submit" value="">
+                                </form>
+                            </div>
+                            <div class="search__icon">
+                                <i></i>
+                            </div>
                         </div>
-                    </nav>
-                    <div class="search">
-                        <div class="search__input"></div>
-                        <div class="search__icon">
-                            <i></i>
-                        </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
+        <div class="search-holder"></div>
     </header>
 
     <main id="main__content" class="main__content" role="main" itemscope itemprop="mainContentOfPage"

@@ -2220,11 +2220,28 @@ var FConvention = (function ($, window, undefined) {
             })
         }
 
+        //search visible
+        function _searchVisible(){
+            $(".search__icon").click(function(){
+                if($(this).hasClass("is-visible")){
+                    $(".search__input .search-input").removeClass("is-visible");
+                    $(".search-holder").removeClass("is-visible");
+                    $(this).removeClass("is-visible");
+                }else{
+                    $(".search__input .search-input").addClass("is-visible");
+                    $(".search-holder").addClass("is-visible");
+                    $(this).addClass("is-visible");
+                }
+
+            })
+        }
+
         return {
             init: function () {
                 _sliderHome();
                 _scrollDownMouse();
                 _scrollDown();
+                _searchVisible();
             }
         };
     }
@@ -2253,7 +2270,7 @@ if (matchMedia('(max-width: 1023px)').matches) {
         "click",
         function (e) {
             e.preventDefault();
-            jQuery(".menu__mobile").toggleClass("opened");
+            jQuery(".header__right").toggleClass("opened");
             jQuery("html, body").toggleClass("menu-mobile--active");
             jQuery(this).toggleClass("open");
         }
@@ -2264,7 +2281,7 @@ if (matchMedia('(max-width: 1023px)').matches) {
 if (matchMedia('(min-width: 1024px) and (orientation:landscape)').matches) {
     //console.log("over 1024px");
     //restore mobile menu in desktop
-    jQuery(".menu__mobile").removeClass("opened");
+    jQuery(".header__right").removeClass("opened");
     jQuery("html, body").removeClass("menu-mobile--active");
 }
 
