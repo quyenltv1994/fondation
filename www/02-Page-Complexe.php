@@ -4,5 +4,6 @@
 <?php include 'blocks/complex_page_intro.php'; ?>
 <?php include 'blocks/video.php'; ?>
 <?php include 'blocks/governance.php'; ?>
-
+<?php include 'blocks/keyfigures.php'; ?>
+<?php include 'blocks/activities.php'; ?>
 <?php include 'footer.php'; ?>

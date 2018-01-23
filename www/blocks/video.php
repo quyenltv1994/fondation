@@ -3,6 +3,7 @@
     <span property="dc:title" content="Profil" class="rdf-meta element-hidden"></span>
     <!-- video-content -->
     <div class="complex-content wrapper maxsize">
+        <div class="container">
             <!-- left column -->
             <div class="sidebar" style="border-top: 6px solid #d2d944;">
                 <div class="sidebar-container">
@@ -38,5 +39,6 @@
                 </div>
             </div>
             <!-- /right column -->
+        </div>
     </div>
 </div>

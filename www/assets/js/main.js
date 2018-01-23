@@ -2236,12 +2236,24 @@ var FConvention = (function ($, window, undefined) {
             })
         }
 
+        //tabs in compagnie
+        function _tagsCompagnie(){
+            $(".group-names li .read__more").click(function(){
+                var href = $(this).attr('href');
+                $(".group-names li .read__more").removeClass("is-active");
+                $(this).addClass("is-active");
+                $(".governance-list").hide();
+                $(href).show();
+            })
+        }
+
         return {
             init: function () {
                 _sliderHome();
                 _scrollDownMouse();
                 _scrollDown();
                 _searchVisible();
+                _tagsCompagnie();
             }
         };
     }

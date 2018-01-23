@@ -2,12 +2,14 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/www/02-Page-Complexe.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/blocks/activities.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/actua_home.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/banner.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/bref_home.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/complex_page_intro.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/governance.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/home_project.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/blocks/keyfigures.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/presse_hone.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/unproject_home.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/video.php" charset="UTF-8" />

@@ -45,31 +45,6 @@
       @media screen and (min-width: $desktop-small){
         padding:63px 120px 60px 85px;
       }
-      .button_read__more{
-        position: absolute;
-        left:0;
-        bottom:-33px;
-        padding:0 0 0 35px;
-        background: $color-readmore;
-        margin:0;
-        width: 100%;
-        @media screen and (min-width: $desktop-medium){
-          width: calc(100% + 43px);
-        }
-        .read__more{
-          color:$white;
-          @include display-flex();
-          height: 65px;
-          align-items: center;
-          width: 100%;
-          &:before{
-            border-left-color: $white;
-          }
-          &:after{
-            background: $white;
-          }
-        }
-      }
     }
     &-title{
       font-size: 32px;
@@ -77,6 +52,31 @@
       color:$white;
       line-height: 40px;
       margin-bottom: 23px;
+    }
+  }
+}
+.button_read__more{
+  position: absolute;
+  left:0;
+  bottom:-33px;
+  padding:0 0 0 35px;
+  background: $color-readmore;
+  margin:0;
+  width: 100%;
+  @media screen and (min-width: $desktop-medium){
+    width: calc(100% + 43px);
+  }
+  .read__more{
+    color:$white;
+    @include display-flex();
+    height: 65px;
+    align-items: center;
+    width: 100%;
+    &:before{
+      border-left-color: $white;
+    }
+    &:after{
+      background: $white;
     }
   }
 }

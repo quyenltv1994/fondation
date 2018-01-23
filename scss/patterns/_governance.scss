@@ -7,9 +7,6 @@
 
   }
   .sub-content{
-    margin-left:80px;
-    width: 100%;
-    max-width: calc(100% - 487px);
     .governance-grid{
       display: flex;
       flex-wrap: wrap;
@@ -54,4 +51,9 @@
       }
     }
   }
+}
+.sub-content {
+  margin-left: 80px;
+  width: 100%;
+  max-width: calc(100% - 487px);
 }

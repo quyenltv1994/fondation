@@ -1,5 +1,6 @@
 <div id="node-470" class="wrap governance node node-governance node--470" style="background:#ffffff;">
     <span property="dc:title" content="Gouvernance" class="rdf-meta element-hidden"></span>    <div class="complex-content governance-content wrapper maxsize">
+        <div class="container">
             <div class="sidebar" style="border-top: 6px solid #a0e3f1;">
                 <div class="sidebar-container">
                     <h2>Gouvernance</h2>
@@ -355,5 +356,6 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 </div>
