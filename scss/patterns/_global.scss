@@ -14,9 +14,32 @@ a{
   transition: all .5s;
  }
 }
-b{
+b, strong{
  font-family: $font-bold;
  color:$color-bold;
+}
+.normalsize{
+ max-width: $container !important;
+}
+.maxsize{
+ max-width: $maxsize !important;
+}
+.smallsize{
+ max-width: $smallsize !important;
+}
+h1{
+ font-family: $font-bold;
+ font-size: 40px;
+ color:$navy-blue;
+ text-transform: uppercase;
+ align-items: center;
+ justify-content: space-between;
+ @media screen and (min-width: $tablet-lage){
+  font-size: 50px;
+ }
+ @media screen and (min-width: $desktop-small){
+  font-size: 65px;
+ }
 }
 .title{
  font-family: $font-bold;

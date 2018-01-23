@@ -1152,9 +1152,35 @@ a:hover {
   color: #ff1111;
   transition: all .5s; }
 
-b {
+b, strong {
   font-family: excellenceinmotion_bold;
   color: #353535; }
+
+.normalsize {
+  max-width: 1250px !important; }
+
+.maxsize {
+  max-width: 1396px !important; }
+
+.smallsize {
+  max-width: 1150px !important; }
+
+h1 {
+  font-family: excellenceinmotion_bold;
+  font-size: 40px;
+  font-size: 2.5rem;
+  color: #051039;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: space-between; }
+  @media screen and (min-width: 992px) {
+    h1 {
+      font-size: 50px;
+      font-size: 3.125rem; } }
+  @media screen and (min-width: 1024px) {
+    h1 {
+      font-size: 65px;
+      font-size: 4.0625rem; } }
 
 .title {
   font-family: excellenceinmotion_bold;
@@ -1265,11 +1291,15 @@ b {
   .header .search-holder {
     background: #fff;
     width: 100%;
-    height: 0; }
+    height: 0;
+    display: none; }
     .header .search-holder.is-visible {
       height: 47px;
       height: 2.9375rem;
       transition: height .3s ease; }
+    @media screen and (min-width: 992px) {
+      .header .search-holder {
+        display: block; } }
   .header__logo {
     overflow: hidden;
     max-height: 93px;
@@ -2746,6 +2776,101 @@ b {
         font-family: excellenceinmotion_bold;
         color: #051039;
         margin-bottom: 2px; }
+
+.complex-page-intro {
+  background: #fff;
+  padding: 56px 0;
+  padding: 3.5rem 0; }
+  .complex-page-intro .field-name-body {
+    max-width: 750px; }
+
+.video {
+  margin: 60px 0;
+  margin: 3.75rem 0; }
+  .video .complex-content {
+    display: flex; }
+    .video .complex-content .video-content * {
+      height: 100%; }
+
+.sidebar {
+  width: 100%;
+  max-width: 487px;
+  background: #fff;
+  padding: 70px 80px;
+  padding: 4.375rem 5rem; }
+  .sidebar h2 {
+    font-family: excellenceinmotion_bold;
+    color: #051039;
+    font-size: 32px;
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .sidebar .tabs li .read__more {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 3px solid rgba(0, 98, 230, 0.33);
+    border-top: 0.1875rem solid rgba(0, 98, 230, 0.33);
+    width: 100%; }
+    .sidebar .tabs li .read__more:hover, .sidebar .tabs li .read__more.is-active {
+      border-top: 3px solid #051039;
+      border-top: 0.1875rem solid #051039; }
+    .sidebar .tabs li .read__more .title {
+      font-family: excellenceinmotion_medium;
+      font-size: 18px;
+      font-size: 1.125rem;
+      margin: 0;
+      color: #0062e6; }
+
+.governance {
+  padding: 74px 0 94px;
+  padding: 4.625rem 0 5.875rem; }
+  .governance .governance-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .governance .sub-content {
+    margin-left: 80px;
+    width: 100%;
+    max-width: calc(100% - 487px); }
+    .governance .sub-content .governance-grid {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -8px;
+      margin: 0 -0.5rem; }
+      .governance .sub-content .governance-grid .item {
+        width: calc(100% / 3 - 16px);
+        width: calc(100% / 3 - 1rem);
+        margin: 8px;
+        margin: 0.5rem; }
+        .governance .sub-content .governance-grid .item .title {
+          font-size: 15px;
+          font-size: 0.9375rem;
+          font-family: excellenceinmotion_bold;
+          color: #fff;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          padding: 10px 20px;
+          padding: 0.625rem 1.25rem;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+          position: relative;
+          z-index: 2;
+          align-items: end; }
+          .governance .sub-content .governance-grid .item .title .full-link {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 3; }
+    .governance .sub-content .tabs-container .tabs-panel:last-child {
+      display: none; }
 
 /* Page 404 css
 -------------------------------------------------------------- */

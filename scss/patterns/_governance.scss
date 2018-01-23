@@ -1,0 +1,57 @@
+.governance{
+  padding:74px 0 94px;
+  .governance-content{
+    @include display-flex();
+  }
+  .sidebar{
+
+  }
+  .sub-content{
+    margin-left:80px;
+    width: 100%;
+    max-width: calc(100% - 487px);
+    .governance-grid{
+      display: flex;
+      flex-wrap: wrap;
+      margin:0 -8px;
+      .item{
+        width: calc(100% / 3 - 16px);
+        margin:8px;
+        .title{
+          font-size: 15px;
+          font-family: $font-bold;
+          color: $white;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          padding: 10px 20px;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+          position: relative;
+          z-index: 2;
+          align-items: end;
+          .full-link{
+            position: absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            z-index: 3;
+          }
+        }
+      }
+    }
+    .tabs-container{
+      .tabs-panel{
+        &:last-child{
+          display: none;
+        }
+      }
+    }
+  }
+}
