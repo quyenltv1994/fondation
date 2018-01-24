@@ -30,7 +30,7 @@ configuration.addModule(
             configuration.bower_path + '/fontfaceobserver/fontfaceobserver.standalone.js',
             configuration.bower_path + '/loadcss/src/loadCSS.js',
             configuration.bower_path + '/flexslider/jquery.flexslider.js',
-
+            configuration.bower_path + '/fancyBox/jquery.fancybox.js',
             // YOUR CODE
             m.js_root_path + '/**/*.js'
         ];

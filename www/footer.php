@@ -108,5 +108,8 @@
     // then load your JS
     loadJS("/assets/js/main.js");
 </script>
+<div class="reveal-overlay">
+
+</div>
 </body>
 </html>

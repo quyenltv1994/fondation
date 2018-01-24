@@ -2,6 +2,7 @@
   min-height: 442px;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
   position: relative;
   border-bottom: 1px solid $white;
   @include display-flex();

@@ -43,10 +43,51 @@
 
                             </div>
 
+                            <div class="reveal" data-reveal="" id="popin--node-1037">
+                                <div class="container">
+                                    <div class="modal-close">
+                                        <div class="content">
+                                            <a data-close=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="box-complex">
+                                            <div class="box-head">
+                                                <div class="box-head-left">
+                                                    <img typeof="foaf:Image" src="http://pphan.airfrance.fondattion.picathena.com/sites/default/files/styles/square_228x228/public/franck_terner_230_1.jpg?itok=sNlRT1ZA" width="228" height="228" alt="">                                                    </div>
+                                                <div class="box-head-right">
+                                                    <div class="box-head-name">
+                                                        Franck Terner                            </div>
+                                                    <div class="description">
+                                                        <p><strong>Directeur Général d'Air France</strong></p>
 
+                                                        <p>1988&nbsp;: Ingénieur de production sur Concorde<br>
+                                                            1989&nbsp;: Responsable du programme et du plan à la Direction de la Maintenance<br>
+                                                            1992&nbsp;: Responsable de la production des ateliers de réparation des équipements de bord<br>
+                                                            1994&nbsp;: Responsable de l'entretien du Concorde<br>
+                                                            1997&nbsp;: Directeur du centre de petit entretien d'Orly<br>
+                                                            2000&nbsp;: Directeur de l'entretien de la flotte moyen-courrier d'Air France<br>
+                                                            2002&nbsp;: Directeur de la maintenance de Regional, filiale d’Air France<br>
+                                                            2007&nbsp;: Directeur général Exploitation et Supports de Regional<br>
+                                                            2008&nbsp;: Directeur général délégué de Regional<br>
+                                                            2010&nbsp;: Directeur Général adjoint Industriel d’Air France<br>
+                                                            2013 :&nbsp;Directeur général adjoint Engineering et Maintenance Air France-KLM</p>
+
+                                                        <p>Il est nommé Directeur général d’Air France le 2 novembre 2016.&nbsp;</p>
+
+                                                        <p><a href="/sites/default/files/pictures/franck_terner_hd.jpg" target="_blank">Télécharger la photo HD</a></p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="item" style="background-image: url(&quot;http://corporate.airfrance.com/sites/default/files/styles/square_228x228/public/alain-herve_bernard_230_1.jpg?itok=ImJZO7jN&quot;); height: 139.797px;">
                                 <span property="dc:title" content="Alain-Hervé Bernard" class="rdf-meta element-hidden"></span>
-                                <div class="title">Alain-Hervé <br> Bernard        <a class="full-link" data-open="popin--node-692" aria-controls="popin--node-692" aria-haspopup="true" tabindex="0"></a>
+                                <div class="title">Alain-Hervé <br> Bernard
+                                    <a class="full-link" data-open="popin--node-692" aria-controls="popin--node-692" aria-haspopup="true" tabindex="0"></a>
                                 </div>
 
 

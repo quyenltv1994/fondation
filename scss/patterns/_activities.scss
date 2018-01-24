@@ -1,6 +1,9 @@
 .activities{
   background: $white;
   padding:109px 0;
+  .sidebar{
+    border-top: 6px solid #f05428;
+  }
   .tabs-container{
     .activities-list{
         .content{

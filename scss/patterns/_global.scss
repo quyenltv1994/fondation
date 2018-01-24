@@ -205,4 +205,55 @@ h2{
 }
 .reveal{
  display: none;
+ width: 100%;
+ max-width: 75%;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
+ align-items: center;
+ -webkit-box-pack: center;
+ -ms-flex-pack: center;
+ justify-content: center;
+ overflow: visible;
+ overflow-y: visible;
+ padding: 0;
+ border: none;
+ background-color: $dark;
+ left: auto;
+ right: auto;
+ margin-left: auto;
+ margin-right: auto;
+ .container{
+  width: 100%;
+  position: relative;
+ }
+ .modal-close {
+  color: #fff;
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  .content {
+   position: relative;
+   a {
+    height: 20px;
+    width: 20px;
+    display: block;
+   }
+  }
+ }
+ .box-complex, .box-simple {
+  background: #fff;
+  border-top: 3px solid $red;
+  max-height: 77vh;
+  padding: 40px 0;
+  overflow-y: auto;
+  .box-head{
+   max-width: 81rem;
+   margin-left: auto;
+   margin-right: auto;
+   .box-head-left{
+    padding-left: .5rem;
+    padding-right: .5rem;
+   }
+  }
+ }
 }

@@ -1,6 +1,9 @@
 .awards{
   background: $white;
   padding:112px 0 90px;
+  .sidebar{
+    border-top: 6px solid #fdab34;
+  }
   .sub-content{
     .tabs-container{
       .tabs-panel{

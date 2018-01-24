@@ -2248,6 +2248,11 @@ var FConvention = (function ($, window, undefined) {
             })
         }
 
+        //fancy box
+        function _fancyBox(){
+            $(".full-link").fancybox();
+        }
+
         return {
             init: function () {
                 _sliderHome();
@@ -2255,6 +2260,7 @@ var FConvention = (function ($, window, undefined) {
                 _scrollDown();
                 _searchVisible();
                 _tagsCompagnie();
+                _fancyBox();
             }
         };
     }
