@@ -1,0 +1,60 @@
+.alliances{
+  padding:152px 0;
+  &-list{
+    .alliance-item{
+      display: flex;
+      margin: 0 -9px;
+      &>div{
+        margin:0 9px;
+        &.alliance-head{
+          width: 100%;
+          max-width: 505px;
+          .alliance-body{
+            .description{
+              background: $white;
+              padding:75px 60px 40px 80px;
+              margin-bottom: 18px;
+              h2{
+                font-size: 32px;
+              }
+            }
+          }
+        }
+        &.right-bloc{
+          background: #d1eb94;
+          width: 100%;
+          max-width: calc(100% - 505px);
+          padding:45px;
+          display: flex;
+          flex-direction: column;
+          .alliance-single-key{
+            font-size: 65px;
+            font-family: $font-bold;
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color:$navy-blue;
+            text-align: center;
+            &:before{
+              content:"";
+              width: 29px;
+              height:1px;
+              background: $red;
+              position: absolute;
+              left:0;
+              right:0;
+              margin:0 auto;
+              bottom:9px;
+            }
+          }
+          .alliance-single-legend{
+            text-align: center;
+            font-size: 17px;
+            font-family: $font-medium;
+            color:$navy-blue;
+          }
+        }
+      }
+    }
+  }
+}

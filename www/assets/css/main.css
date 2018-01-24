@@ -1182,6 +1182,12 @@ h1 {
       font-size: 65px;
       font-size: 4.0625rem; } }
 
+h2 {
+  font-size: 32px;
+  font-size: 2rem;
+  font-family: excellenceinmotion_bold;
+  color: #051039; }
+
 .title {
   font-family: excellenceinmotion_bold;
   font-size: 40px;
@@ -1266,6 +1272,73 @@ h1 {
       left: 1.6875rem; }
     .read__more:hover:after {
       left: 0; }
+
+.keys {
+  margin: 0 -9px 30px -9px;
+  margin: 0 -0.5625rem 1.875rem -0.5625rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .keys li {
+    display: inline-block;
+    margin: 0 9px;
+    margin: 0 0.5625rem;
+    width: calc(50% - 18px);
+    width: calc(50% - 1.125rem);
+    background: #fff;
+    text-align: center;
+    color: #051039;
+    font-size: 18px;
+    font-size: 1.125rem; }
+    .keys li .key {
+      font-size: 65px;
+      font-size: 4.0625rem;
+      font-family: excellenceinmotion_bold;
+      position: relative;
+      margin-top: 10px;
+      margin-bottom: 5px; }
+      .keys li .key:before {
+        content: "";
+        width: 29px;
+        width: 1.8125rem;
+        height: 1px;
+        height: 0.0625rem;
+        background: #ff0d0d;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 9px;
+        bottom: 0.5625rem; }
+      .keys li .key-legend {
+        margin-bottom: 10px; }
+        .keys li .key-legend .sublegend {
+          font-size: 15px;
+          font-size: 0.9375rem;
+          color: #737373; }
+    .keys li .legend {
+      font-family: excellenceinmotion_medium; }
+    .keys li .read {
+      margin-bottom: 0;
+      padding: 5px 0 5px 25px;
+      padding: 0.3125rem 0 0.3125rem 1.5625rem;
+      background: #0062e6; }
+    .keys li .read__more {
+      display: block;
+      background: none; }
+      .keys li .read__more .title {
+        font-family: excellenceinmotion_medium;
+        font-size: 18px;
+        font-size: 1.125rem;
+        margin: 0;
+        color: #fff; }
+      .keys li .read__more:before {
+        border-left-color: #fff; }
+      .keys li .read__more:after {
+        background: #fff; }
+  .keys:last-child {
+    margin-bottom: 0; }
 
 /* Header css
  ----------------------------------------------------------------------------------------------------*/
@@ -2795,8 +2868,8 @@ h1 {
   width: 100%;
   max-width: 487px;
   background: #fff;
-  padding: 70px 80px;
-  padding: 4.375rem 5rem; }
+  padding: 65px 55px 30px 80px;
+  padding: 4.0625rem 3.4375rem 1.875rem 5rem; }
   .sidebar h2 {
     font-family: excellenceinmotion_bold;
     color: #051039;
@@ -2832,7 +2905,9 @@ h1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin: 0 43px;
+  margin: 0 2.6875rem; }
 
 .governance {
   padding: 74px 0 94px;
@@ -2879,13 +2954,14 @@ h1 {
           top: 0;
           bottom: 0;
           z-index: 3; }
-  .governance .sub-content .tabs-container .tabs-panel:last-child {
-    display: none; }
 
 .sub-content {
   margin-left: 80px;
   width: 100%;
   max-width: calc(100% - 487px); }
+
+.tabs-container .tabs-panel:not(:first-child) {
+  display: none; }
 
 .keyfigures {
   padding: 60px 0;
@@ -2900,32 +2976,62 @@ h1 {
       line-height: 25px;
       line-height: 1.5625rem;
       margin-bottom: 29px; }
-    .keyfigures .sub-content .keys {
-      margin: 0 -9px 30px -9px;
-      margin: 0 -0.5625rem 1.875rem -0.5625rem;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; }
-      .keyfigures .sub-content .keys li {
-        display: inline-block;
-        margin: 0 9px;
-        margin: 0 0.5625rem;
-        width: calc(50% - 18px);
-        width: calc(50% - 1.125rem);
-        background: #fff;
-        text-align: center;
-        color: #051039;
-        font-size: 18px;
-        font-size: 1.125rem; }
-        .keyfigures .sub-content .keys li .key {
+    .keyfigures .sub-content .button_read__more {
+      bottom: -90px;
+      bottom: -5.625rem; }
+
+.activities {
+  background: #fff;
+  padding: 109px 0;
+  padding: 6.8125rem 0; }
+  .activities .tabs-container .activities-list .content {
+    padding: 62px 152px 60px 80px;
+    padding: 3.875rem 9.5rem 3.75rem 5rem; }
+    .activities .tabs-container .activities-list .content .activity-name {
+      font-size: 32px;
+      font-size: 2rem;
+      font-family: excellenceinmotion_bold;
+      color: #051039; }
+
+.alliances {
+  padding: 152px 0;
+  padding: 9.5rem 0; }
+  .alliances-list .alliance-item {
+    display: flex;
+    margin: 0 -9px;
+    margin: 0 -0.5625rem; }
+    .alliances-list .alliance-item > div {
+      margin: 0 9px;
+      margin: 0 0.5625rem; }
+      .alliances-list .alliance-item > div.alliance-head {
+        width: 100%;
+        max-width: 505px; }
+        .alliances-list .alliance-item > div.alliance-head .alliance-body .description {
+          background: #fff;
+          padding: 75px 60px 40px 80px;
+          padding: 4.6875rem 3.75rem 2.5rem 5rem;
+          margin-bottom: 18px; }
+          .alliances-list .alliance-item > div.alliance-head .alliance-body .description h2 {
+            font-size: 32px;
+            font-size: 2rem; }
+      .alliances-list .alliance-item > div.right-bloc {
+        background: #d1eb94;
+        width: 100%;
+        max-width: calc(100% - 505px);
+        padding: 45px;
+        padding: 2.8125rem;
+        display: flex;
+        flex-direction: column; }
+        .alliances-list .alliance-item > div.right-bloc .alliance-single-key {
           font-size: 65px;
           font-size: 4.0625rem;
           font-family: excellenceinmotion_bold;
           position: relative;
           margin-top: 10px;
-          margin-bottom: 5px; }
-          .keyfigures .sub-content .keys li .key:before {
+          margin-bottom: 5px;
+          color: #051039;
+          text-align: center; }
+          .alliances-list .alliance-item > div.right-bloc .alliance-single-key:before {
             content: "";
             width: 29px;
             width: 1.8125rem;
@@ -2938,37 +3044,12 @@ h1 {
             margin: 0 auto;
             bottom: 9px;
             bottom: 0.5625rem; }
-          .keyfigures .sub-content .keys li .key-legend {
-            margin-bottom: 10px; }
-            .keyfigures .sub-content .keys li .key-legend .sublegend {
-              font-size: 15px;
-              font-size: 0.9375rem;
-              color: #737373; }
-        .keyfigures .sub-content .keys li .legend {
-          font-family: excellenceinmotion_medium; }
-        .keyfigures .sub-content .keys li .read {
-          margin-bottom: 0;
-          padding: 5px 0 5px 25px;
-          padding: 0.3125rem 0 0.3125rem 1.5625rem;
-          background: #0062e6; }
-        .keyfigures .sub-content .keys li .read__more {
-          display: block;
-          background: none; }
-          .keyfigures .sub-content .keys li .read__more .title {
-            font-family: excellenceinmotion_medium;
-            font-size: 18px;
-            font-size: 1.125rem;
-            margin: 0;
-            color: #fff; }
-          .keyfigures .sub-content .keys li .read__more:before {
-            border-left-color: #fff; }
-          .keyfigures .sub-content .keys li .read__more:after {
-            background: #fff; }
-      .keyfigures .sub-content .keys:last-child {
-        margin-bottom: 0; }
-    .keyfigures .sub-content .button_read__more {
-      bottom: -90px;
-      bottom: -5.625rem; }
+        .alliances-list .alliance-item > div.right-bloc .alliance-single-legend {
+          text-align: center;
+          font-size: 17px;
+          font-size: 1.0625rem;
+          font-family: excellenceinmotion_medium;
+          color: #051039; }
 
 /* Page 404 css
 -------------------------------------------------------------- */

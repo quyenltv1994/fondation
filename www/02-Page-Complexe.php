@@ -6,4 +6,5 @@
 <?php include 'blocks/governance.php'; ?>
 <?php include 'blocks/keyfigures.php'; ?>
 <?php include 'blocks/activities.php'; ?>
+<?php include 'blocks/alliances.php' ?>
 <?php include 'footer.php'; ?>

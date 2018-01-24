@@ -2238,11 +2238,12 @@ var FConvention = (function ($, window, undefined) {
 
         //tabs in compagnie
         function _tagsCompagnie(){
-            $(".group-names li .read__more").click(function(){
+            $(".group-names li .read__more").click(function(e){
+                e.preventDefault();
                 var href = $(this).attr('href');
                 $(".group-names li .read__more").removeClass("is-active");
                 $(this).addClass("is-active");
-                $(".governance-list").hide();
+                $(".tabs-panel").hide();
                 $(href).show();
             })
         }

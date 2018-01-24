@@ -1,0 +1,16 @@
+.activities{
+  background: $white;
+  padding:109px 0;
+  .tabs-container{
+    .activities-list{
+        .content{
+          padding:62px 152px 60px 80px;
+          .activity-name{
+            font-size: 32px;
+            font-family: $font-bold;
+            color: $navy-blue;
+          }
+        }
+    }
+  }
+}
