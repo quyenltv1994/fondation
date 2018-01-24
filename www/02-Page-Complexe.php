@@ -8,4 +8,5 @@
 <?php include 'blocks/activities.php'; ?>
 <?php include 'blocks/alliances.php' ?>
 <?php include 'blocks/awards.php' ?>
+<?php include 'blocks/saga.php' ?>
 <?php include 'footer.php'; ?>

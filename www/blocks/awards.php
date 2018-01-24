@@ -4,70 +4,70 @@
     <div class="awards-content complex-content wrapper maxsize">
         <div class="container">
             <!-- sidebar -->
-            <div class="sidebar" style="border-top: 6px solid #fdab34;">
+            <div class="sidebar">
                 <div class="sidebar-container">
                     <h2>Récompenses</h2>
                     <div class="description">
                         <p>Réputée à travers le monde pour la qualité de son offre, pour le maillage et la densité de son réseau et ses efforts dans les domaines de l’innovation numérique et du service client, Air France est régulièrement récompensée par des prix dans différents domaines et dans toutes les régions du monde.</p>
                     </div>
 
-                    <ul class="group-names tabs vertical" data-tabs="kzqapp-tabs" id="awards-lists">
-                        <li class="tabs-title is-active" role="presentation">
-                            <a href="#awards-group-node-503-0" class="tab-button dont-scroll read__more" role="tab" aria-controls="awards-group-node-503-0" aria-selected="true" id="awards-group-node-503-0-label">
+                    <ul class="group-names tabs vertical" data-tabs="" id="awards-lists">
+                        <li class="tabs-title is-active">
+                            <a href="#awards-group-node-503-0" class="tab-button dont-scroll read__more">
                                   <span class="content">
                                     <span class="icon"></span>
-                                    <span class="title">
-                                      Client
+                                    <span class="title"> 
+                                      Client 
                                     </span>
                                   </span>
                             </a>
                         </li>
-                        <li class="tabs-title" role="presentation">
-                            <a href="#awards-group-node-503-1" class="tab-button dont-scroll read__more" role="tab" aria-controls="awards-group-node-503-1" aria-selected="false" id="awards-group-node-503-1-label">
+                        <li class="tabs-title">
+                            <a href="#awards-group-node-503-1" class="tab-button dont-scroll read__more">
                                   <span class="content">
                                     <span class="icon"></span>
-                                    <span class="title">
-                                      Classes
+                                    <span class="title"> 
+                                      Classes 
                                     </span>
                                   </span>
                             </a>
                         </li>
-                        <li class="tabs-title" role="presentation">
-                            <a href="#awards-group-node-503-2" class="tab-button dont-scroll read__more" role="tab" aria-controls="awards-group-node-503-2" aria-selected="false" id="awards-group-node-503-2-label">
+                        <li class="tabs-title">
+                            <a href="#awards-group-node-503-2" class="tab-button dont-scroll read__more">
                                   <span class="content">
                                     <span class="icon"></span>
-                                    <span class="title">
-                                      Gastronomie
+                                    <span class="title"> 
+                                      Gastronomie 
                                     </span>
                                   </span>
                             </a>
                         </li>
-                        <li class="tabs-title" role="presentation">
-                            <a href="#awards-group-node-503-3" class="tab-button dont-scroll read__more" role="tab" aria-controls="awards-group-node-503-3" aria-selected="false" id="awards-group-node-503-3-label">
+                        <li class="tabs-title">
+                            <a href="#awards-group-node-503-3" class="tab-button dont-scroll read__more">
                                   <span class="content">
                                     <span class="icon"></span>
-                                    <span class="title">
-                                      Communication
+                                    <span class="title"> 
+                                      Communication 
                                     </span>
                                   </span>
                             </a>
                         </li>
-                        <li class="tabs-title" role="presentation">
-                            <a href="#awards-group-node-503-4" class="tab-button dont-scroll read__more" role="tab" aria-controls="awards-group-node-503-4" aria-selected="false" id="awards-group-node-503-4-label">
+                        <li class="tabs-title">
+                            <a href="#awards-group-node-503-4" class="tab-button dont-scroll read__more">
                                   <span class="content">
                                     <span class="icon"></span>
-                                    <span class="title">
-                                      Maintenance
+                                    <span class="title"> 
+                                      Maintenance 
                                     </span>
                                   </span>
                             </a>
                         </li>
-                        <li class="tabs-title" role="presentation">
-                            <a href="#awards-group-node-503-5" class="tab-button dont-scroll read__more" role="tab" aria-controls="awards-group-node-503-5" aria-selected="false" id="awards-group-node-503-5-label">
+                        <li class="tabs-title">
+                            <a href="#awards-group-node-503-5" class="tab-button dont-scroll read__more">
                                   <span class="content">
                                     <span class="icon"></span>
-                                    <span class="title">
-                                      Environnement
+                                    <span class="title"> 
+                                      Environnement 
                                     </span>
                                   </span>
                             </a>
@@ -272,8 +272,7 @@
                                         </div>
                                     </div>
 
-                                </ul>
-                            </div>
+                                </ul></div>
                         </div>
                     </div>
                     <div class="tabs-panel awards-list " id="awards-group-node-503-1">
@@ -291,9 +290,11 @@
                                         <div class="item__image">
                                             <img src="http://pphan.airfrance.fondattion.picathena.com/sites/default/files/styles/square_228x228/public/logo_hurun.jpg?itok=Re6tto_F" alt="">
                                         </div>
-                                        <a data-open="popin--node-503--1--0" class="link-more mini plus read__more">
-                                            en savoir plus
-                                        </a>
+                                        <p class="read">
+                                            <a data-open="popin--node-503--1--0" class="link-more mini plus read__more">
+                                                en savoir plus
+                                            </a>
+                                        </p>
                                     </li>
                                     <div class="reveal" id="popin--node-503--1--0" data-reveal="">
                                         <div class="container">
@@ -335,9 +336,11 @@
                                         <div class="item__image">
                                             <img src="http://pphan.airfrance.fondattion.picathena.com/sites/default/files/styles/square_228x228/public/aircraft-expo-interiors.jpg?itok=MhcCZO-w" alt="">
                                         </div>
-                                        <a data-open="popin--node-503--1--1" class="link-more mini plus read__more">
-                                            en savoir plus
-                                        </a>
+                                        <p class="read">
+                                            <a data-open="popin--node-503--1--1" class="link-more mini plus read__more">
+                                                en savoir plus
+                                            </a>
+                                        </p>
                                     </li>
                                     <div class="reveal" id="popin--node-503--1--1" data-reveal="">
                                         <div class="container">
@@ -395,9 +398,11 @@
                                         <div class="item__image">
                                             <img src="http://pphan.airfrance.fondattion.picathena.com/sites/default/files/styles/square_228x228/public/logo_skytrax.jpg?itok=jiEYChW9" alt="">
                                         </div>
-                                        <a data-open="popin--node-503--2--0" class="link-more mini plus read__more">
-                                            en savoir plus
-                                        </a>
+                                        <p class="read">
+                                            <a data-open="popin--node-503--2--0" class="link-more mini plus read__more">
+                                                en savoir plus
+                                            </a>
+                                        </p>
                                     </li>
                                     <div class="reveal" id="popin--node-503--2--0" data-reveal="">
                                         <div class="container">
@@ -455,9 +460,11 @@
                                         <div class="item__image">
                                             <img src="http://pphan.airfrance.fondattion.picathena.com/sites/default/files/styles/square_228x228/public?itok=mxiEMa3e" alt="">
                                         </div>
-                                        <a data-open="popin--node-503--3--0" class="link-more mini plus read__more">
-                                            en savoir plus
-                                        </a>
+                                        <p class="read">
+                                            <a data-open="popin--node-503--3--0" class="link-more mini plus read__more">
+                                                en savoir plus
+                                            </a>
+                                        </p>
                                     </li>
                                     <div class="reveal" id="popin--node-503--3--0" data-reveal="">
                                         <div class="container">
@@ -497,9 +504,11 @@
                                         <div class="item__image">
                                             <img src="http://pphan.airfrance.fondattion.picathena.com/sites/default/files/styles/square_228x228/public/logo_travel_d_or.jpg?itok=ieHjXEL-" alt="">
                                         </div>
-                                        <a data-open="popin--node-503--3--1" class="link-more mini plus read__more">
-                                            en savoir plus
-                                        </a>
+                                        <p class="read">
+                                            <a data-open="popin--node-503--3--1" class="link-more mini plus read__more">
+                                                en savoir plus
+                                            </a>
+                                        </p>
                                     </li>
                                     <div class="reveal" id="popin--node-503--3--1" data-reveal="">
                                         <div class="container">
@@ -555,9 +564,11 @@
                                         <div class="item__image">
                                             <img src="http://pphan.airfrance.fondattion.picathena.com/sites/default/files/styles/square_228x228/public/logo_airline_economics_0.jpg?itok=jtZ-9irA" alt="">
                                         </div>
-                                        <a data-open="popin--node-503--4--0" class="link-more mini plus read__more">
-                                            en savoir plus
-                                        </a>
+                                        <p class="read">
+                                            <a data-open="popin--node-503--4--0" class="link-more mini plus read__more">
+                                                en savoir plus
+                                            </a>
+                                        </p>
                                     </li>
                                     <div class="reveal" id="popin--node-503--4--0" data-reveal="">
                                         <div class="container">
@@ -619,9 +630,11 @@
                                         <div class="item__image">
                                             <img src="http://pphan.airfrance.fondattion.picathena.com/sites/default/files/styles/square_228x228/public/logo_forum_annuel_planclimat.jpg?itok=B1Hsykug" alt="">
                                         </div>
-                                        <a data-open="popin--node-503--5--0" class="link-more mini plus read__more">
-                                            en savoir plus
-                                        </a>
+                                        <p class="read">
+                                            <a data-open="popin--node-503--5--0" class="link-more mini plus read__more">
+                                                en savoir plus
+                                            </a>
+                                        </p>
                                     </li>
                                     <div class="reveal" id="popin--node-503--5--0" data-reveal="">
                                         <div class="container">

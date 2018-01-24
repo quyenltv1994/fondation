@@ -1,0 +1,43 @@
+.saga{
+  min-height: 442px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  border-bottom: 1px solid $white;
+  @include display-flex();
+  align-items: center;
+  .saga-content{
+    height:100%;
+    .container{
+      color:$white;
+      display: block;
+      text-align: center;
+      h2{
+        display: block;
+        width: 100%;
+        color: $white;
+        font-size: 65px;
+        text-transform: uppercase;
+        margin-top: 45px;
+      }
+      .read__more{
+        color:$white;
+        &:before{
+          border-left-color: $white;
+        }
+        &:after{
+          background: $white;
+        }
+      }
+    }
+  }
+  &:before{
+    content:"";
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background: rgba($dark, .33);
+    position: absolute;
+  }
+}

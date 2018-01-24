@@ -3092,7 +3092,9 @@ h2 {
             top: 0; }
 
 .awards {
-  background: #fff; }
+  background: #fff;
+  padding: 112px 0 90px;
+  padding: 7rem 0 5.625rem; }
   .awards .sub-content .tabs-container .tabs-panel .slide {
     display: flex;
     flex-wrap: wrap;
@@ -3144,6 +3146,47 @@ h2 {
       background: #fff; }
     .read .read__more:hover {
       color: #fff; }
+
+.saga {
+  min-height: 442px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  border-bottom: 1px solid #fff;
+  border-bottom: 0.0625rem solid #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center; }
+  .saga .saga-content {
+    height: 100%; }
+    .saga .saga-content .container {
+      color: #fff;
+      display: block;
+      text-align: center; }
+      .saga .saga-content .container h2 {
+        display: block;
+        width: 100%;
+        color: #fff;
+        font-size: 65px;
+        font-size: 4.0625rem;
+        text-transform: uppercase;
+        margin-top: 45px; }
+      .saga .saga-content .container .read__more {
+        color: #fff; }
+        .saga .saga-content .container .read__more:before {
+          border-left-color: #fff; }
+        .saga .saga-content .container .read__more:after {
+          background: #fff; }
+  .saga:before {
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.33);
+    position: absolute; }
 
 /* Page 404 css
 -------------------------------------------------------------- */
