@@ -1,0 +1,39 @@
+.fixed-menu{
+  background: $white;
+  .anchor-menu{
+    display: none;
+  }
+  .social-box{
+    .content{
+      background: #abc528;
+      max-width: 228px;
+      @include display-flex();
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 10px 10px;
+      float:right;
+      padding: 7px 23px;
+      margin-right: 36px;
+      span{
+        font-size: 12px;
+        font-family: $font-bold;
+        text-transform: uppercase;
+        color:$white;
+      }
+      ul{
+        li{
+          display: inline-block;
+          .social-icon{
+            background: none;
+            margin:0;
+            font-size: 12px;
+          }
+          .icon-print{
+            font-size: 12px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

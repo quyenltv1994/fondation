@@ -69,7 +69,15 @@ var FConvention = (function ($, window, undefined) {
 
         //fancy box
         function _fancyBox(){
-            $(".full-link").fancybox();
+            $(".full-link, .link-more").click(function(e){
+                e.preventDefault();
+                var id = $(this).data('open');
+                var content = $("#"+id).html();
+                $(".reveal-overlay").append(content).addClass("is-active");
+            })
+            $(document).on("click", ".modal-close", function() {
+                $(".reveal-overlay").html('').removeClass("is-active");
+            });
         }
 
         return {

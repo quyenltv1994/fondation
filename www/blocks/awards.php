@@ -466,33 +466,35 @@
                                             </a>
                                         </p>
                                     </li>
-                                    <div class="reveal" id="popin--node-503--3--0" data-reveal="">
-                                        <div class="container">
-                                            <div class="modal-close">
-                                                <div class="content">
-                                                    <a data-close=""></a>
+                                    <div id="popin--node-503--3--0">
+                                        <div class="reveal" id="popin--node-503--3--0" data-reveal="">
+                                            <div class="container">
+                                                <div class="modal-close">
+                                                    <div class="content">
+                                                        <a data-close=""></a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="box-content">
-                                                <div class="box-complex">
-                                                    <div class="box-head">
-                                                        <div class="box-head-left">
-                                                            <img src="http://pphan.airfrance.fondattion.picathena.com/sites/default/files/styles/square_228x228/public?itok=mxiEMa3e">
-                                                        </div>
-                                                        <div class="box-head-right">
-                                                            <!--
-                                                           <div class="box-head-name">
-                                                                                                                                  </div>
-                                                           -->
-                                                            <div class="description">
-                                                                <p><strong>Le film publicitaire «&nbsp;France is in the Air&nbsp;» récompensé</strong></p>
+                                                <div class="box-content">
+                                                    <div class="box-complex">
+                                                        <div class="box-head">
+                                                            <div class="box-head-left">
+                                                                <img src="http://pphan.airfrance.fondattion.picathena.com/sites/default/files/styles/square_228x228/public?itok=mxiEMa3e">
+                                                            </div>
+                                                            <div class="box-head-right">
+                                                                <!--
+                                                               <div class="box-head-name">
+                                                                                                                                      </div>
+                                                               -->
+                                                                <div class="description">
+                                                                    <p><strong>Le film publicitaire «&nbsp;France is in the Air&nbsp;» récompensé</strong></p>
 
-                                                                <p>Le 25 mars 2016, Air France a obtenu le prix « 2015 China New Advertising Golden Award » pour son film publicitaire France is in the Air lors de la 10ème édition des China Advertising Annual Awards à Shanghai.</p>
+                                                                    <p>Le 25 mars 2016, Air France a obtenu le prix « 2015 China New Advertising Golden Award » pour son film publicitaire France is in the Air lors de la 10ème édition des China Advertising Annual Awards à Shanghai.</p>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="box-footer">
-                                                        <div class="box-footer-list">
+                                                        <div class="box-footer">
+                                                            <div class="box-footer-list">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>

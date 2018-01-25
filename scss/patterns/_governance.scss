@@ -40,11 +40,12 @@
             top:0;
             bottom:0;
             z-index: 3;
+            cursor: pointer;
           }
         }
-        .reveal{
-          display: none;
-        }
+      }
+      .reveal {
+        display: none;
       }
     }
   }
