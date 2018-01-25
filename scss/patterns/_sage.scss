@@ -17,9 +17,12 @@
         display: block;
         width: 100%;
         color: $white;
-        font-size: 65px;
+        font-size: 40px;
         text-transform: uppercase;
         margin-top: 45px;
+        @media screen and (min-width: $mobile-small){
+          font-size: 65px;
+        }
       }
       .read__more{
         color:$white;

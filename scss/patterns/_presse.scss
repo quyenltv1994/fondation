@@ -1,0 +1,66 @@
+.main-introduction{
+  background: $white;
+  padding:10px 0 50px;
+  h1{
+    margin-bottom: 14px;
+  }
+}
+.magazine__press{
+  &--main{
+    background: $white;
+  }
+  &--item{
+    @include display-flex();
+    &>*{
+      width: 50%;
+    }
+    .image{
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  &--box{
+    border-top: 6px solid #e21a5b;
+    background: $white;
+    box-shadow: 1px 1px 12px #ccc;
+    .date{
+      color: #e21a5b;
+    }
+    .actua_title{
+      a{
+        &:hover{
+          color:#e21a5b;
+        }
+      }
+    }
+  }
+}
+.presses-wrapper{
+  padding:80px 0 115px;
+}
+.presses-content.wrapper{
+  .container{
+    @media screen and (min-width: $desktop-small){
+      margin-right: 0;
+    }
+    .presses-list{
+      .activity-body{
+        .activity-image{
+          img{
+            width: 100%;
+            display: block;
+          }
+        }
+        .content{
+          .button_read__more{
+            width: 50%;
+            left:auto;
+            right:0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,63 +1,39 @@
 .video{
   margin:60px 0;
   .complex-content {
-    .video-content{
-      *{
-        height:100%;
-      }
-    }
-  }
-}
-.sidebar{
-  width: 100%;
-  max-width: 487px;
-  background: $white;
-  padding:65px 55px 30px 80px;
-  border-top: 6px solid #d2d944;
-  h2{
-    font-family: $font-bold;
-    color: $navy-blue;
-    font-size: 32px;
-  }
-  .tabs{
-    li{
-      .read__more{
-        padding-top:16px;
-        padding-bottom: 16px;
-        border-top:3px solid rgba($color-readmore, .33);
-        width: 100%;
-        display: block;
-        &:hover, &.is-active{
-          border-top:3px solid $navy-blue;
-          padding-left: 52px;
-          &:before{
-            border-left-color: $navy-blue;
-            left: 27px;
-          }
-          &:after{
-            background: $navy-blue;
-            left: 0;
-          }
-          .title{
-            color:$navy-blue !important;
-          }
-        }
-        .title{
-          font-family: $font-medium;
-          font-size: 18px;
-          margin:0;
-          color: $color-readmore;
-        }
-      }
-    }
-  }
-}
-.complex-content{
-  &.wrapper{
     .container{
+      display: block;
       @include display-flex();
-      margin:0 43px;
+      flex-direction: column-reverse;
+      @media screen and (min-width: $tablet-medium){
+        margin:0 43px;
+      }
+      @media screen and (min-width: $desktop-small){
+        flex-direction:row;
+      }
+      .sidebar{
+        @media screen and (max-width: $desktop-small - 1px){
+          max-width:100%;
+        }
+
+      }
+    }
+    .video-content{
+      height:300px;
+      @media screen and (min-width: $mobile-small){
+        height:400px;
+      }
+      @media screen and (min-width: $tablet-medium){
+        height: 500px;
+      }
+      @media screen and (min-width: $desktop-small - 1px){
+        height: auto;
+        width: 63%;
+      }
+      *{
+          height:100%;
+          width: 100%;
+      }
     }
   }
-
 }

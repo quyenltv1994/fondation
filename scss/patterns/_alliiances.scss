@@ -1,24 +1,48 @@
 .alliances{
-  padding:152px 0;
+  padding:70px 0 60px;
+  @media screen and (min-width: $desktop-medium){
+    padding:152px 0;
+  }
   .sidebar{
     border-top: 6px solid #acc432;
   }
   &-list{
     .alliance-item{
-      display: flex;
-      margin: 0 -9px;
+      display: block;
+      @media screen and (min-width: $desktop-medium) {
+        margin: 0 -9px;
+      }
+      @media screen and (min-width: $desktop-medium){
+        @include display-flex();
+      }
       &>div{
-        margin:0 9px;
+        @media screen and (min-width: $desktop-medium){
+          margin:0 9px;
+        }
         &.alliance-head{
           width: 100%;
-          max-width: 505px;
+          margin-bottom: 20px;
+          @media screen and (min-width: $desktop-medium){
+            max-width: 505px;
+            margin-bottom: 0;
+          }
           .alliance-body{
             .description{
               background: $white;
-              padding:75px 60px 40px 80px;
+              padding:50px 15px 40px 15px;
               margin-bottom: 18px;
+              @media screen and (min-width: $mobile-small){
+                padding:75px 60px 40px 80px;
+              }
               h2{
                 font-size: 32px;
+              }
+            }
+            .alliance-keys{
+              .keys{
+                li{
+                  padding: 10px 0 35px;
+                }
               }
             }
           }
@@ -26,10 +50,27 @@
         &.right-bloc{
           background: #d1eb94;
           width: 100%;
-          max-width: calc(100% - 505px);
-          padding:45px 40px;
-          display: flex;
-          flex-direction: column;
+          padding: 27px 40px;
+          @media screen and (min-width: $mobile-small){
+            @include display-flex();
+          }
+          @media screen and (min-width: $desktop-medium){
+            max-width: calc(100% - 505px);
+            flex-direction: column;
+            padding:45px 40px;
+          }
+          .top{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media screen and (min-width: $mobile-small){
+              max-width: 32%;
+            }
+            @media screen and (min-width: $desktop-medium){
+              max-width: none;
+            }
+          }
           .alliance-single-key{
             font-size: 65px;
             font-family: $font-bold;
@@ -59,14 +100,39 @@
           }
           .alliance-image{
             text-align: center;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 26px;
+            @media screen and (min-width: $mobile-small){
+              max-width: 130px;
+              margin-bottom: 0;
+              border-left:1px solid $white;
+              border-right:1px solid $white;
+            }
+            @media screen and (min-width: $desktop-medium){
+              max-width: none;
+              display: block;
+              margin-bottom: 26px;
+              border:none;
+            }
             img{
               max-width: 100%;
             }
           }
           .alliance-short-text{
-            padding-top: 30px;
             position: relative;
+            width: 100%;
+            padding-top:30px;
+            @media screen and (min-width: $mobile-small){
+              max-width: 45%;
+              padding:20px 0 20px 20px;
+            }
+            @media screen and (min-width: $desktop-medium){
+              max-width: none;
+              padding-top: 30px;
+            }
             &:before{
               content:"";
               width: calc(100% + 20px);
@@ -75,6 +141,13 @@
               position: absolute;
               left:-10px;
               top:0;
+              display: block;
+              @media screen and (min-width: $mobile-small){
+                display: none;
+              }
+              @media screen and (min-width: $desktop-medium){
+                display: block;
+              }
             }
           }
         }

@@ -3,7 +3,7 @@
     <div class="alliances-content complex-content wrapper maxsize">
         <div class="container">
             <!-- left column -->
-            <div class="sidebar" style="border-top: 3px solid #acc432;">
+            <div class="sidebar">
                 <div class="sidebar-container">
                     <h2>Alliances et coopérations</h2>
                     <div class="description"><div class="field field-name-body field-type-text-with-summary field-label-hidden">
@@ -60,40 +60,52 @@
 
                                         <span class="icon"></span>
                                     </a>
+                                    <div class="alliance-keys">
+                                        <span property="dc:title" content="456K" class="rdf-meta element-hidden"></span><div class="figure-supertitle">
+                                        </div>
+                                        <ul class="keys">
+                                            <!-- key figure -->
+                                            <li class="item" style="
+    padding: 10px 0 35px;
+">
+                                                <div class="key">
+                                                    <span class="number">456K</span>
+                                                </div>
+
+                                                <div class="key-legend">
+                                                    <span class="legend">Lorem ipsum manis</span>
+
+                                                </div>
+
+
+                                                <!-- /key figure -->
+                                            </li>
+                                            <!-- key figure -->
+                                            <li class="item">
+                                                <div class="key">
+                                                    <span class="number">321</span>
+                                                </div>
+
+                                                <div class="key-legend">
+                                                    <span class="legend">Lorem ipsum manis</span>
+
+                                                </div>
+
+
+                                                <!-- /key figure -->
+                                            </li>
+                                        </ul>
+                                    </div>
 
                                 </div>
-                                <ul class="keys">
-
-                                    <li class="item">
-
-                                        <div class="key">
-                                            <span class="number">200</span>
-
-                                        </div>
-
-                                        <div class="key-legend">
-                                            <div class="legend">clients internationaux</div>
-                                        </div>
-
-                                    </li>
-                                    <li class="item">
-
-                                        <div class="key">
-                                            <span class="number">350</span>
-
-                                        </div>
-
-                                        <div class="key-legend">
-                                            <div class="legend">destinations</div>
-                                        </div>
-                                    </li>
-                                </ul>
                             </div>
                             <div class="right-bloc">
-                                <div class="alliance-single-key single-key">
-                                    20                                            </div>
-                                <div class="alliance-single-legend single-legend">
-                                    compagnies membres en 2016                                            </div>
+                                <div class="top">
+                                    <div class="alliance-single-key single-key">
+                                        20                                            </div>
+                                    <div class="alliance-single-legend single-legend">
+                                        compagnies membres en 2016                                            </div>
+                                </div>
                                 <div class="alliance-image image">
                                     <img typeof="foaf:Image" src="http://corporate.airfrance.com/sites/default/files/styles/alliance_46x46/public/logo_skyteam.png?itok=HR9I4wnd" width="46" height="46" alt="">                                            </div>
 

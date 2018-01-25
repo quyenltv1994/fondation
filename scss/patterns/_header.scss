@@ -111,10 +111,17 @@
               padding:6px;
               display: inline-block;
               a{
-                cursor: pointer;
                 color:$navy-blue;
                 @media screen and (min-width: $tablet-lage){
                   color:$white;
+                }
+                &:hover, &.active{
+                  color: $red;
+                }
+                abbr{
+                  cursor: pointer !important;
+                  border:none;
+                  text-decoration: none !important;
                 }
               }
               &:first-child{
@@ -301,6 +308,9 @@
       li{
         a{
           color:$navy-blue;
+          &.active, &:hover{
+            color: $red !important;
+          }
         }
       }
     }

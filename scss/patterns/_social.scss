@@ -8,8 +8,8 @@
       background: #abc528;
       max-width: 228px;
       @include display-flex();
-      align-items: center;
-      justify-content: center;
+      @include flex-align(center);
+      @include flex-justify(center);
       border-radius: 0 0 10px 10px;
       float:right;
       padding: 7px 23px;
@@ -36,4 +36,7 @@
       }
     }
   }
+}
+.icon-print:before {
+  content: "\e900";
 }

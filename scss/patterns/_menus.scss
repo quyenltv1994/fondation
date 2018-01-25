@@ -159,7 +159,7 @@
         font-size: 14px;
         transition: all .5s;
         @include hover {
-          color: $color-hover;
+          color: $navy-blue;
         }
         @media screen and (max-width: $tablet-lage - 1px){
           color: $navy-blue;

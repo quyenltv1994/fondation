@@ -56,5 +56,53 @@
         line-height: 35px;
       }
     }
+    &:nth-child(1){
+      .image{
+        border-bottom: 6px solid #9ee3f3;
+      }
+      .presse__home--item-title{
+        a{
+          &:hover{
+            color: #9ee3f3;
+          }
+        }
+      }
+    }
+    &:nth-child(2){
+      .image{
+        border-bottom: 6px solid #752a97;
+      }
+      .presse__home--item-title{
+        a{
+          &:hover{
+            color: #752a97;
+          }
+        }
+      }
+    }
+    &:nth-child(3){
+      .image{
+        border-bottom: 6px solid #aeca10;
+      }
+      .presse__home--item-title{
+        a{
+          &:hover{
+            color: #aeca10;
+          }
+        }
+      }
+    }
+    &:nth-child(4){
+      .image{
+        border-bottom: 6px solid #ff0d0d;
+      }
+      .presse__home--item-title{
+        a{
+          &:hover{
+            color: #ff0d0d;
+          }
+        }
+      }
+    }
   }
 }

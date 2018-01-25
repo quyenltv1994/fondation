@@ -8,13 +8,17 @@
   }
   .sub-content{
     .governance-grid{
-      display: flex;
+      @include display-flex();
       flex-wrap: wrap;
       margin:0 -8px;
       .item{
-        width: calc(100% / 3 - 16px);
+        width: calc(100% / 2 - 16px);
         margin:8px;
         height: 140px;
+        background-position: center center;
+        @media screen and (min-width: $mobile-small){
+          width: calc(100% / 3 - 16px);
+        }
         .title{
           font-size: 15px;
           font-family: $font-bold;
@@ -47,18 +51,6 @@
       .reveal {
         display: none;
       }
-    }
-  }
-}
-.sub-content {
-  margin-left: 80px;
-  width: 100%;
-  max-width: calc(100% - 487px);
-}
-.tabs-container{
-  .tabs-panel{
-    &:not(:first-child){
-      display: none;
     }
   }
 }

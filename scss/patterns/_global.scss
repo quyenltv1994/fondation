@@ -84,7 +84,7 @@ h2{
  padding-left: 35px;
  position: relative;
  overflow: hidden;
- transition: all .5s;
+ transition: all .2s;
  &:before{
   content:"";
   width:0px;
@@ -121,16 +121,22 @@ h2{
  }
 }
 .keys{
- margin:0 -9px 30px -9px;
- @include display-flex();
+ @media screen and (min-width: $mobile-small) {
+  @include display-flex();
+  margin:0 -9px 30px -9px;
+ }
  li{
   display: inline-block;
-  margin:0 9px;
-  width: calc(50% - 18px);
+  width: 100%;
   background: $white;
   text-align: center;
   color: $navy-blue;
   font-size: 18px;
+  margin-bottom: 15px;
+  @media screen and (min-width: $mobile-small){
+   width: calc(50% - 18px);
+   margin:0 9px;
+  }
   .key{
    font-size: 65px;
    font-family: $font-bold;
@@ -171,6 +177,7 @@ h2{
   .read__more{
    display: block;
    background: none;
+   text-align: left;
    .title{
     font-family: $font-medium;
     font-size: 18px;
@@ -296,23 +303,32 @@ h2{
  }
 }
 .main-image{
- min-height: 575px;
+ min-height: 400px;
  width: 100%;
  background-size: cover;
  position: relative;
+ @media screen and (min-width: $mobile-small){
+  min-height: 575px;
+ }
  .content{
   position: absolute;
   left:0;
   right:0;
-  bottom:170px;
+  bottom:90px;
+  @media screen and (min-width: $mobile-small){
+   bottom:170px;
+  }
   h2{
    color: #fff;
-   font-size: 65px;
+   font-size: 40px;
    font-family: excellenceinmotion_bold;
    text-transform: uppercase;
-   width: 460px;
+   max-width: 460px;
    line-height: 60px;
    margin-bottom: 25px;
+   @media screen and (min-width: $tablet-medium){
+    font-size: 65px;
+   }
   }
  }
 }
@@ -321,6 +337,94 @@ h2{
   color:$navy-blue;
  }
 }
-.icon-print:before {
- content: "\e900";
+.sidebar{
+ width: 100%;
+ background: $white;
+ border-top: 6px solid #d2d944;
+ padding:30px 15px;
+ margin-bottom: 20px;
+ @media screen and (min-width: $tablet-medium){
+  max-width: 37%;
+  margin-bottom: 0;
+ }
+ @media screen and (min-width: $tablet-lage){
+  padding: 57px 55px 30px 55px;
+ }
+ @media screen and (min-width: $desktop-small){
+  padding:65px 55px 30px 80px;
+ }
+ h2{
+  font-family: $font-bold;
+  color: $navy-blue;
+  font-size: 32px;
+ }
+ .tabs{
+  li{
+   .read__more{
+    padding-top:16px;
+    padding-bottom: 16px;
+    border-top:3px solid rgba($color-readmore, .33);
+    width: 100%;
+    display: block;
+    &:hover, &.is-active{
+     border-top:3px solid $navy-blue;
+     padding-left: 52px;
+     &:before{
+      border-left-color: $navy-blue;
+      left: 27px;
+     }
+     &:after{
+      background: $navy-blue;
+      left: 0;
+     }
+     .title{
+      color:$navy-blue !important;
+     }
+    }
+    .title{
+     font-family: $font-medium;
+     font-size: 18px;
+     margin:0;
+     color: $color-readmore;
+    }
+   }
+  }
+ }
+}
+.sub-content {
+ width: 100%;
+ @media screen and (min-width: $tablet-medium){
+  margin-left: 15px;
+ }
+ @media screen and (min-width: $tablet-medium){
+  max-width: 63%;
+ }
+ @media screen and (min-width: $desktop-small){
+  margin-left: 80px;
+ }
+}
+.tabs-content{
+ width: 100%;
+ @media screen and (min-width: $tablet-medium){
+  max-width: 63%;
+ }
+}
+.tabs-container{
+ .tabs-panel{
+  &:not(:first-child){
+   display: none;
+  }
+ }
+}
+.complex-content{
+ &.wrapper{
+  .container{
+   @media screen and (min-width: $tablet-medium){
+    @include display-flex();
+   }
+   @media screen and (min-width: $desktop-small){
+    margin:0 43px;
+   }
+  }
+ }
 }

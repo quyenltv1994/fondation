@@ -1,13 +1,26 @@
 .activities{
   background: $white;
-  padding:109px 0;
+  padding:109px 0 230px;
+  @media screen and (min-width: $mobile-small){
+    padding:109px 0 230px;
+  }
   .sidebar{
     border-top: 6px solid #f05428;
   }
   .tabs-container{
     .activities-list{
+      .activity-body{
+        position: relative;
+      }
         .content{
-          padding:62px 152px 60px 80px;
+          @media screen and (min-width: $mobile-small){
+            padding: 35px 55px 60px 55px;
+            position: absolute;
+            background: $white;
+          }
+          @media screen and (min-width: $desktop-small){
+            padding:62px 152px 60px 80px;
+          }
           .activity-name{
             font-size: 32px;
             font-family: $font-bold;

@@ -2241,9 +2241,9 @@ var FConvention = (function ($, window, undefined) {
             $(".group-names li .read__more").click(function(e){
                 e.preventDefault();
                 var href = $(this).attr('href');
-                $(".group-names li .read__more").removeClass("is-active");
+                $(this).closest('.container').find(".group-names li .read__more").removeClass("is-active");
                 $(this).addClass("is-active");
-                $(".tabs-panel").hide();
+                $(this).closest('.container').find(".tabs-panel").hide();
                 $(href).show();
             })
         }

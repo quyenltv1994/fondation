@@ -12,6 +12,7 @@
         background-size:cover;
         background-position: center bottom;
         position: relative;
+        min-height: 500px;
         img{
           visibility: hidden;
           display: block;
@@ -20,7 +21,7 @@
       }
       &__content{
         position: absolute;
-        bottom:270px;
+        bottom:150px;
         max-width: 1150px;
         padding:0 15px;
         margin:0 auto;
@@ -28,15 +29,27 @@
         right:0;
         overflow: hidden;
         padding-bottom: 15px;
+        @media screen and (min-width: $desktop-medium){
+          bottom:270px;
+        }
         h2{
           color:$white;
-          font-size: 65px;
+          font-size: 40px;
           font-family: $font-bold;
           text-transform: uppercase;
-          width: 460px;
-          line-height: 60px;
-          margin-bottom: 25px;
+          margin-bottom: 0;
+          line-height: 40px;
+          max-width: 460px;
           transform: translateX(-103%);
+          @media screen and (min-width: $tablet-medium){
+            font-size: 50px;
+            margin-bottom: 15px;
+            line-height: 60px;
+          }
+          @media screen and (min-width: $desktop-medium){
+            font-size: 50px;
+            margin-bottom: 25px;
+          }
         }
         a{
           font-size: 18px;
@@ -79,14 +92,23 @@
         font-size: 0;
         left:auto;
         &:before{
-          font-size: 60px;
-          line-height: 60px;
+          font-size: 40px;
+          line-height: 40px;
           border:2px solid $white;
           border-radius: 50%;
+          @media screen and (min-width: $tablet-medium){
+            font-size: 60px;
+            line-height: 60px;
+          }
         }
       }
       .flex-prev{
-        right:100px;
+        right:15px;
+        top: calc(100% - 110px);
+        @media screen and (min-width: $tablet-medium) {
+          top: 50%;
+          right:100px;
+        }
         &:before{
           font-family: "icomoon2";
           content:"\e901";
@@ -95,8 +117,12 @@
         }
       }
       .flex-next{
-        right:140px !important;
-        top: calc(50% + 80px);
+        top: calc(100% - 50px);
+        right:15px !important;
+        @media screen and (min-width: $tablet-medium) {
+          right: 140px !important;
+          top: calc(50% + 80px);
+        }
         &:before{
           font-family: "icomoon2";
           content:"\e901";
@@ -108,14 +134,18 @@
       .flex-direction-nav{
         .flex-nav-prev{
           .flex-prev{
-            right:120px;
-            left:auto;
+            left: auto;
+            @media screen and (min-width: $tablet-medium) {
+              right: 120px;
+            }
           }
         }
         .flex-next{
-          right:120px !important;
-          left:auto;
-          top: calc(50% + 80px);
+          left: auto;
+          @media screen and (min-width: $tablet-medium) {
+            right: 120px !important;
+            top: calc(50% + 80px);
+          }
         }
       }
 
