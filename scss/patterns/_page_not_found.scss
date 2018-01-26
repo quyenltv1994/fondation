@@ -1,0 +1,20 @@
+.not-found-page{
+  padding:150px 0 35px;
+  @media screen and (min-width: $tablet-medium){
+    padding:240px 0 35px;
+  }
+  text-align: center;
+  h1{
+    font-size: 160px;
+    line-height: 175px;
+    @media screen and (min-width: $tablet-medium){
+      font-size: 263px;
+    }
+    &+p{
+      font-family: $font-bold;
+      color:$navy-blue;
+      max-width: 455px;
+      margin:0 auto 49px;
+    }
+  }
+}

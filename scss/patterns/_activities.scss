@@ -1,8 +1,11 @@
 .activities{
   background: $white;
-  padding:109px 0 230px;
-  @media screen and (min-width: $mobile-small){
-    padding:109px 0 230px;
+  padding:109px 0 0;
+  @media screen and (min-width: $desktop-small){
+    padding:109px 0 150px;
+  }
+  @media screen and (min-width: $desktop-medium){
+    padding:109px 0 235px;
   }
   .sidebar{
     border-top: 6px solid #f05428;
@@ -15,6 +18,8 @@
         .content{
           @media screen and (min-width: $mobile-small){
             padding: 35px 55px 60px 55px;
+          }
+          @media screen and (min-width: $desktop-small){
             position: absolute;
             background: $white;
           }

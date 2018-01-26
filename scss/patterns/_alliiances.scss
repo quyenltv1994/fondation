@@ -1,6 +1,9 @@
 .alliances{
   padding:70px 0 60px;
   @media screen and (min-width: $desktop-medium){
+    padding:170px 0 60px;
+  }
+  @media screen and (min-width: $desktop-medium){
     padding:152px 0;
   }
   .sidebar{

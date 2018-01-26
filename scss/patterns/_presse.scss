@@ -25,6 +25,7 @@
     border-top: 6px solid #e21a5b;
     background: $white;
     box-shadow: 1px 1px 12px #ccc;
+    padding-bottom: 0;
     .date{
       color: #e21a5b;
     }
@@ -37,17 +38,17 @@
     }
   }
 }
-.presses-wrapper{
+.press-lists{
   padding:80px 0 115px;
 }
-.presses-content.wrapper{
+.press-content.wrapper{
   .container{
     @media screen and (min-width: $desktop-small){
       margin-right: 0;
     }
     .presses-list{
-      .activity-body{
-        .activity-image{
+      .press-body{
+        .press-image{
           img{
             width: 100%;
             display: block;
@@ -55,9 +56,12 @@
         }
         .content{
           .button_read__more{
-            width: 50%;
+            width: calc(100% - 30px);
             left:auto;
-            right:0;
+            right: 15px;
+            @media screen and (min-width: $tablet-medium){
+              width: calc(50% - 15px);
+            }
           }
         }
       }

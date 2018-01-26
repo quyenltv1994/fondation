@@ -1,5 +1,8 @@
 .governance{
-  padding:74px 0 94px;
+  padding:10px 0 80px;
+  @media screen and (min-width: $desktop-small){
+    padding:74px 0 94px;
+  }
   .governance-content{
     @include display-flex();
   }

@@ -12,10 +12,12 @@
     <file url="file://$PROJECT_DIR$/www/blocks/governance.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/home_project.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/keyfigures.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/blocks/list_actua.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/presse.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/presse_hone.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/unproject_home.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/blocks/video.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/blocks/voir_aussi.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/footer.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/www/header.php" charset="UTF-8" />
   </component>

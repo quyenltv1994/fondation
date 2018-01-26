@@ -358,39 +358,41 @@ h2{
   color: $navy-blue;
   font-size: 32px;
  }
- .tabs{
-  li{
-   .read__more{
-    padding-top:16px;
-    padding-bottom: 16px;
-    border-top:3px solid rgba($color-readmore, .33);
-    width: 100%;
-    display: block;
-    &:hover, &.is-active{
-     border-top:3px solid $navy-blue;
-     padding-left: 52px;
-     &:before{
-      border-left-color: $navy-blue;
-      left: 27px;
-     }
-     &:after{
-      background: $navy-blue;
-      left: 0;
-     }
-     .title{
-      color:$navy-blue !important;
-     }
+}
+//style of button
+.tabs{
+ li{
+  .read__more{
+   padding-top:16px;
+   padding-bottom: 16px;
+   border-top:3px solid rgba($color-readmore, .33);
+   width: 100%;
+   display: block;
+   &:hover, &.is-active{
+    border-top:3px solid $navy-blue;
+    padding-left: 52px;
+    &:before{
+     border-left-color: $navy-blue;
+     left: 27px;
+    }
+    &:after{
+     background: $navy-blue;
+     left: 0;
     }
     .title{
-     font-family: $font-medium;
-     font-size: 18px;
-     margin:0;
-     color: $color-readmore;
+     color:$navy-blue !important;
     }
+   }
+   .title{
+    font-family: $font-medium;
+    font-size: 18px;
+    margin:0;
+    color: $color-readmore;
    }
   }
  }
 }
+//style subcontent
 .sub-content {
  width: 100%;
  @media screen and (min-width: $tablet-medium){

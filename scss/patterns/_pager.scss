@@ -1,0 +1,31 @@
+.pager{
+  text-align: center;
+  li{
+    display: inline-block;
+    font-family: $font-bold;
+    font-size: 15px;
+    margin:0 2px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    a{
+      color:$navy-blue;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      display: block;
+    }
+    &.pager-current, &:hover{
+      border:1px solid $navy-blue;
+    }
+    &.pager-next{
+      a{
+        color:#0062e6;
+        &:before{
+          content: "\e80a";
+          font-family: icomoon;
+        }
+      }
+    }
+  }
+}

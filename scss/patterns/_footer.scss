@@ -122,6 +122,9 @@
         @media screen and (min-width: $tablet-medium){
           display: block;
         }
+        #block-base-footer{
+          width: 100%;
+        }
         .logo {
           width: 165px;
           position:absolute;
