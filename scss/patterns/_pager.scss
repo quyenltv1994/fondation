@@ -8,6 +8,7 @@
     height: 30px;
     width: 30px;
     line-height: 30px;
+    border:1px solid transparent;
     a{
       color:$navy-blue;
       height: 30px;
@@ -15,8 +16,16 @@
       line-height: 30px;
       display: block;
     }
-    &.pager-current, &:hover{
+    &:hover{
+      background: $navy-blue;
+      a{
+        color:$white;
+      }
+    }
+    &.pager-current{
+      background: $navy-blue;
       border:1px solid $navy-blue;
+      color:$white;
     }
     &.pager-next{
       a{

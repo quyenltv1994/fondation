@@ -3960,18 +3960,18 @@ h2 {
   .press-content.wrapper .container {
     margin-right: 0; } }
 
-.press-content.wrapper .container .presses-list .press-body .press-image img {
+.press-content.wrapper .container .press-list .press-body .press-image img {
   width: 100%;
   display: block; }
 
-.press-content.wrapper .container .presses-list .press-body .content .button_read__more {
+.press-content.wrapper .container .press-list .press-body .content .button_read__more {
   width: calc(100% - 30px);
   width: calc(100% - 1.875rem);
   left: auto;
   right: 15px;
   right: 0.9375rem; }
   @media screen and (min-width: 768px) {
-    .press-content.wrapper .container .presses-list .press-body .content .button_read__more {
+    .press-content.wrapper .container .press-list .press-body .content .button_read__more {
       width: calc(50% - 15px);
       width: calc(50% - 0.9375rem); } }
 
@@ -4063,7 +4063,9 @@ h2 {
     width: 30px;
     width: 1.875rem;
     line-height: 30px;
-    line-height: 1.875rem; }
+    line-height: 1.875rem;
+    border: 1px solid transparent;
+    border: 0.0625rem solid transparent; }
     .pager li a {
       color: #051039;
       height: 30px;
@@ -4073,9 +4075,15 @@ h2 {
       line-height: 30px;
       line-height: 1.875rem;
       display: block; }
-    .pager li.pager-current, .pager li:hover {
+    .pager li:hover {
+      background: #051039; }
+      .pager li:hover a {
+        color: #fff; }
+    .pager li.pager-current {
+      background: #051039;
       border: 1px solid #051039;
-      border: 0.0625rem solid #051039; }
+      border: 0.0625rem solid #051039;
+      color: #fff; }
     .pager li.pager-next a {
       color: #0062e6; }
       .pager li.pager-next a:before {
