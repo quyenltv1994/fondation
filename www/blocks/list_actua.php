@@ -164,12 +164,14 @@
 
                     <div class="views-field views-field-field-more-link">
                         <div class="field-content">
-                            <a href="http://corporate.airfrance.com/fr/presse" class="button plus" target="_self">
-                                <span class="content">
-                                    <span class="title">Espace presse</span>
-                                    <span class="icon"></span>
-                                </span>
-                            </a>
+                            <p class="read">
+                                <a href="http://corporate.airfrance.com/fr/presse" class="read__more" target="_self">
+                                    <span class="content">
+                                        <span class="title">Espace presse</span>
+                                        <span class="icon"></span>
+                                    </span>
+                                </a>
+                            </p>
                         </div>
                     </div>
 
@@ -182,40 +184,42 @@
                             <div class="views-exposed-widgets clearfix">
                                 <div class="item-list">
                                     <ul class="MYM-tabbed-filter tabs">
-                                        <li class="first"><a href="/fr/actualites?field_theme_tid=184" class="MYM-filter-tab active" id="184">Alliances</a><span class="filter-count"> (2)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=54" class="MYM-filter-tab active" id="54">Business</a><span class="filter-count"> (13)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=177" class="MYM-filter-tab active" id="177">Client</a><span class="filter-count"> (26)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=62" class="MYM-filter-tab active" id="62">Economy</a><span class="filter-count"> (3)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=36" class="MYM-filter-tab active" id="36">Emploi</a><span class="filter-count"> (1)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=186" class="MYM-filter-tab active" id="186">Engagements</a><span class="filter-count"> (4)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=65" class="MYM-filter-tab active" id="65">Evénement</a><span class="filter-count"> (33)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=56" class="MYM-filter-tab active" id="56">Flotte</a><span class="filter-count"> (17)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=181" class="MYM-filter-tab active" id="181">Fondation</a><span class="filter-count"> (2)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=53" class="MYM-filter-tab active" id="53">Gastronomie</a><span class="filter-count"> (20)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=190" class="MYM-filter-tab active" id="190">Groupe</a><span class="filter-count"> (9)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=183" class="MYM-filter-tab active" id="183">HOP!</a><span class="filter-count"> (2)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=197" class="MYM-filter-tab active" id="197">Joon</a><span class="filter-count"> (5)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=79" class="MYM-filter-tab active" id="79">Kids</a><span class="filter-count"> (3)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=74" class="MYM-filter-tab active" id="74">La Première</a><span class="filter-count"> (6)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=68" class="MYM-filter-tab active" id="68">La saga</a><span class="filter-count"> (2)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=37" class="MYM-filter-tab active" id="37">Le voyage</a><span class="filter-count"> (12)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=57" class="MYM-filter-tab active" id="57">Montée en gamme</a><span class="filter-count"> (3)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=64" class="MYM-filter-tab active" id="64">Partenariat</a><span class="filter-count"> (10)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=63" class="MYM-filter-tab active" id="63">Premium Economy</a><span class="filter-count"> (6)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=185" class="MYM-filter-tab active" id="185">Récompenses</a><span class="filter-count"> (1)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=51" class="MYM-filter-tab active" id="51">Réseau</a><span class="filter-count"> (33)</span></li>
-                                        <li><a href="/fr/actualites?field_theme_tid=157" class="MYM-filter-tab active" id="157">Salons</a><span class="filter-count"> (1)</span></li>
-                                        <li class="last"><a href="/fr/actualites?field_theme_tid=78" class="MYM-filter-tab active" id="78">Shopping</a><span class="filter-count"> (3)</span></li>
+                                        <li class="first"><a href="/fr/actualites?field_theme_tid=184" class="read__more" id="184">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=54" class="read__more" id="54">Business <span class="filter-count"> (13)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=177" class="read__more" id="177">Client <span class="filter-count"> (26)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=62" class="read__more" id="62">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=36" class="read__more" id="36">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=186" class=" read__more" id="186">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=65" class="read__more" id="65">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=56" class="read__more" id="56">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=181" class="read__more" id="181">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=53" class="read__more" id="53">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=190" class="read__more" id="190">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=183" class="read__more" id="183">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=197" class="read__more" id="197">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=79" class="read__more" id="79">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=74" class="read__more" id="74">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=68" class="read__more" id="68">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=37" class="read__more" id="37">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=57" class="read__more" id="57">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=64" class="read__more" id="64">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=63" class="read__more" id="63">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=185" class="read__more" id="185">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=51" class="read__more" id="51">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li><a href="/fr/actualites?field_theme_tid=157" class="read__more" id="157">Alliances <span class="filter-count"> (2)</span></a></li>
+                                        <li class="last"><a href="/fr/actualites?field_theme_tid=78" class="read__more" id="78">Alliances <span class="filter-count"> (2)</span></a></li>
                                     </ul></div>    </div>
                         </div></div></form></section>
         </aside>
     </div>
     <div class="item-list">
-        <ul class="pager"><li class="pager-current first">1</li>
-            <li class="pager-item"><a title="Aller à la page 2" href="/fr/actualites?field_theme_tid=All&amp;page=1">2</a></li>
+        <ul class="pager"><li class="pager-first first"><a href="/fr/actualites?field_theme_tid=All"></a></li>
+            <li class="pager-previous"><a href="/fr/actualites?field_theme_tid=All"></a></li>
+            <li class="pager-item"><a title="Aller à la page 1" href="/fr/actualites?field_theme_tid=All">1</a></li>
+            <li class="pager-current">2</li>
             <li class="pager-item"><a title="Aller à la page 3" href="/fr/actualites?field_theme_tid=All&amp;page=2">3</a></li>
             <li class="pager-item"><a title="Aller à la page 4" href="/fr/actualites?field_theme_tid=All&amp;page=3">4</a></li>
-            <li class="pager-next"><a href="/fr/actualites?field_theme_tid=All&amp;page=1"></a></li>
+            <li class="pager-next"><a href="/fr/actualites?field_theme_tid=All&amp;page=2"></a></li>
             <li class="pager-last last"><a href="/fr/actualites?field_theme_tid=All&amp;page=34"></a></li>
         </ul>
     </div>

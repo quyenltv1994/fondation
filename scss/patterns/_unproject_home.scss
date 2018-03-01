@@ -63,6 +63,7 @@
   background: $color-readmore;
   margin:0;
   width: 100%;
+  box-shadow: 2px 4px 12px #ccc;
   @media screen and (min-width: $desktop-medium){
     width: calc(100% + 43px);
   }

@@ -251,7 +251,7 @@
     margin: 0 auto 20px;
   }
   &.sticky{
-    border-bottom-color: $navy-blue;
+    border-bottom-color: $light-blue;
     background: $white;
     .header__logo-link{
       transform: translateY(-100%);
@@ -272,7 +272,7 @@
       }
     }
     .header__right--bottom{
-      border-top-color: $navy-blue;
+      border-top-color: $light-blue;
       .search{
         &__icon{
           i{

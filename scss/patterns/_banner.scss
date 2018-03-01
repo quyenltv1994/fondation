@@ -10,9 +10,12 @@
       li{
         background-repeat: no-repeat;
         background-size:cover;
-        background-position: center bottom;
+        background-position: center top;
         position: relative;
         min-height: 500px;
+        @media screen and (min-width: $desktop-medium){
+          min-height: 870px;
+        }
         img{
           visibility: hidden;
           display: block;
@@ -49,6 +52,15 @@
           @media screen and (min-width: $desktop-medium){
             font-size: 50px;
             margin-bottom: 25px;
+          }
+          p{
+            font-size: 40px;
+            @media screen and (min-width: $tablet-medium) {
+              font-size: 50px;
+            }
+            @media screen and (min-width: $desktop-medium){
+              font-size: 65px;
+            }
           }
         }
         a{
@@ -205,4 +217,36 @@
 @keyframes scrollDown {
   from {top: 4px;}
   to {top: 12px;}
+}
+.flex-direction-nav{
+  a{
+    overflow: inherit;
+    font-size: 0;
+    left:auto;
+    &:before{
+      font-size: 40px;
+      line-height: 40px;
+      border:2px solid $white;
+      border-radius: 50%;
+      @media screen and (min-width: $tablet-medium){
+        font-size: 60px;
+        line-height: 60px;
+      }
+    }
+  }
+  .flex-prev{
+    &:before{
+      font-family: "icomoon2";
+      content:"\e901";
+      color:$white;
+      transform: rotate(180deg);
+    }
+  }
+  .flex-next{
+    &:before{
+      font-family: "icomoon2";
+      content:"\e901" !important;
+      color:$white;
+    }
+  }
 }

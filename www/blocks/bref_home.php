@@ -5,7 +5,7 @@
                 <div class="image">
                     <img src="../assets/img/bref-img.jpg" alt=""> 
                 </div>
-                <div class="bref__home--box">
+                <div class="bref__home--box paroller">
                     <h2 class="title">En bref</h2>
                     <div class="bref__home--item--content">
                         <div class="bref">

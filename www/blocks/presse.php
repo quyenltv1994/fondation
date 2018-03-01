@@ -16,12 +16,13 @@
     <div class="magazine__press--main">
         <div class="wrapper smallsize">
             <div class="magazine__press--item">
-                <div class="image">
+                <div class="image" style="background-image: url('http://pphan.airfrance.fondattion.picathena.com/sites/default/files/styles/press_intro/public/post-img-press.jpg?itok=4stMA7Bn');">
                     <div class="field field-name-field-main-image field-type-image field-label-hidden">
                         <div class="field-items">
                             <div class="field-item even"><img typeof="foaf:Image" src="http://pphan.airfrance.fondattion.picathena.com/sites/default/files/post-img-press.jpg" width="560" height="370"></div>
                         </div>
-                    </div>        </div>
+                    </div>
+                </div>
                 <div class="magazine__press--box actua_content">
                     <div class="magazine date">
                         <div class="field field-name-field-date field-type-datetime field-label-hidden">

@@ -1,0 +1,22 @@
+.node{
+  h1{
+    margin-bottom: 14px;
+  }
+  .article{
+    .body-summary{
+      margin-bottom: 30px;
+    }
+    .infonews{
+      font-size: 14px;
+      font-family: $font-bold;
+      text-transform: uppercase;
+      color:#e21a5b;
+      padding:38px 0;
+      text-transform: uppercase;
+      border-top:1px solid #e7e6e6;
+    }
+    .image{
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -18,7 +18,7 @@ var FConvention = (function ($, window, undefined) {
         //scroll down when click mouse down
         function _scrollDownMouse(){
             $('.scroll__down').click(function(){
-                var top_first_element = $('.bref__home').offset().top;
+                var top_first_element = $('.bref__home').offset().top - 138;
                 $("html, body").animate({
                     scrollTop:  top_first_element
                 }, 700);
@@ -69,14 +69,32 @@ var FConvention = (function ($, window, undefined) {
 
         //fancy box
         function _fancyBox(){
-            $(".full-link, .link-more").click(function(e){
+        	$(".paroller").paroller({
+                factor: 0.2,            // multiplier for scrolling speed and offset
+                type: 'foreground',     // background, foreground
+                direction: 'vertical' // vertical, horizontal
+            });
+            $(".popup-box").fancybox();
+            $(".popup-box, .link-more").click(function(e){
                 e.preventDefault();
-                var id = $(this).data('open');
-                var content = $("#"+id).html();
-                $(".reveal-overlay").append(content).addClass("is-active");
             })
             $(document).on("click", ".modal-close", function() {
-                $(".reveal-overlay").html('').removeClass("is-active");
+                $(".fancybox-close").trigger('click');
+            });
+        }
+
+        function _slider(){
+            $(".slider__node").flexslider();
+        }
+
+        function _animation_hover(){
+            $(".animation_hover").hover(function(){
+                $(this).addClass("animation_hover");
+            }, function(){
+                $(this).removeClass("animation_hover");
+            });
+            google.maps.event.addListenerOnce(map, 'idle', function(){
+                jQuery('.gm-style-iw').prev('div').remove();
             });
         }
 
@@ -88,6 +106,7 @@ var FConvention = (function ($, window, undefined) {
                 _searchVisible();
                 _tagsCompagnie();
                 _fancyBox();
+                _slider();
             }
         };
     }

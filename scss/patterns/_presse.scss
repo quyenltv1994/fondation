@@ -8,13 +8,23 @@
 .magazine__press{
   &--main{
     background: $white;
+    padding-bottom: 118px;
   }
   &--item{
     @include display-flex();
+    @media screen and (max-width: $tablet-medium - 1px) {
+      display: block;
+    }
     &>*{
       width: 50%;
     }
     .image{
+      background-size: cover;
+      background-position: center center;
+      @media screen and (max-width: $tablet-medium - 1px){
+        min-height: 400px;
+        width: 100%;
+      }
       img{
         width: 100%;
         display: block;
@@ -25,7 +35,9 @@
     border-top: 6px solid #e21a5b;
     background: $white;
     box-shadow: 1px 1px 12px #ccc;
-    padding-bottom: 0;
+    @media screen and (max-width: $tablet-medium - 1px){
+      width: 100%;
+    }
     .date{
       color: #e21a5b;
     }
@@ -46,7 +58,10 @@
     @media screen and (min-width: $desktop-small){
       margin-right: 0;
     }
-    .presses-list{
+    .sidebar{
+      border-top-color: $orange;
+    }
+    .press-list{
       .press-body{
         .press-image{
           img{

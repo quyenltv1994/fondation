@@ -15,12 +15,12 @@
       flex-wrap: wrap;
       margin:0 -8px;
       .item{
-        width: calc(100% / 2 - 16px);
-        margin:8px;
-        height: 140px;
+        width: calc(100% / 2 - 20px);
+        margin:10px;
+        height: 185px;
         background-position: center center;
         @media screen and (min-width: $mobile-small){
-          width: calc(100% / 3 - 16px);
+          width: calc(100% / 3 - 20px);
         }
         .title{
           font-size: 15px;
@@ -40,7 +40,7 @@
           position: relative;
           z-index: 2;
           align-items: end;
-          .full-link{
+          .popup-box{
             position: absolute;
             left:0;
             right:0;

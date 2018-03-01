@@ -53,14 +53,14 @@
         &.right-bloc{
           background: #d1eb94;
           width: 100%;
-          padding: 27px 40px;
+          padding: 27px 35px;
           @media screen and (min-width: $mobile-small){
             @include display-flex();
           }
           @media screen and (min-width: $desktop-medium){
             max-width: calc(100% - 505px);
             flex-direction: column;
-            padding:45px 40px;
+            padding:45px 35px;
           }
           .top{
             width: 100%;
@@ -128,9 +128,10 @@
             position: relative;
             width: 100%;
             padding-top:30px;
+            font-size: 16px;
             @media screen and (min-width: $mobile-small){
               max-width: 45%;
-              padding:20px 0 20px 20px;
+              padding:20px 0;
             }
             @media screen and (min-width: $desktop-medium){
               max-width: none;

@@ -26,7 +26,8 @@
     "fontfaceobserver": "~2.0.7",
     "loadcss": "~1.2.1",
     "flexslider" :"~2.6.4",
-    "fancyBox": "2.1.5"
+    "fancyBox": "2.1.5",
+    "paroller.js": "*"
   }
 }
 
