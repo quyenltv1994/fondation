@@ -11,7 +11,7 @@
   .wrapper{
     max-width: 955px;
     @media screen and (min-width: $desktop-medium) {
-      display: flex;
+      @include display-flex();
       align-items: center;
       max-width: $container;
     }
@@ -77,6 +77,9 @@
       position: static;
       max-width: none;
       padding:0;
+    }
+    @media screen and (min-width: $desktop-medium){
+      max-width: calc(100% - 287px);
     }
     &--top{
       transition: all 1s;
@@ -153,6 +156,7 @@
       .search{
         display: flex;
         align-items: center;
+        position: unset;
         .main-search{
           width: 100%;
           display: flex;
@@ -250,16 +254,13 @@
   &__img {
     margin: 0 auto 20px;
   }
-  &.sticky{
+  &.sticky, &.none_banner{
     border-bottom-color: $light-blue;
     background: $white;
     .header__logo-link{
       transform: translateY(-100%);
     }
     .header__right--top{
-      @media screen and (min-width: $desktop-medium){
-        height:55px;
-      }
       section{
         a{
           color:$navy-blue;
@@ -316,6 +317,17 @@
     }
     .search-holder{
       background: $navy-blue;
+    }
+  }
+  &.none_banner{
+    .logo{
+      &__default{
+        display: none !important;
+      }
+      &__sticky{
+        display: block !important;
+        transform: translateY(0) !important;
+      }
     }
   }
 }

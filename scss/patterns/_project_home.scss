@@ -3,11 +3,28 @@
     max-width: 1134px;
     margin:0 auto;
     margin-bottom: 60px;
+    position: relative;
     @media screen and (min-width: $tablet-medium){
       margin-left: 50px;
     }
     @media screen and (min-width: $desktop-medium){
       margin-left: auto;
+    }
+    .read__more{
+      @media screen and (min-width: $tablet-medium){
+        position: absolute;
+        right:17px;
+        top:15px;
+      }
+      @media screen and (min-width: $tablet-lage){
+        top:20px;
+      }
+      @media screen and (min-width: $desktop-medium) {
+        top: 30px;
+      }
+      &:hover{
+        right:0;
+      }
     }
   }
   .wrapper{
@@ -50,7 +67,6 @@
       padding:51px 25px 35px 47px;
       font-size: 18px;
       border-top: 6px solid #ff0d0d;
-      box-shadow: 1px 1px 12px #ccc;
       @media screen and (min-width: $tablet-medium){
         max-width: 57%;
       }

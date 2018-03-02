@@ -10,10 +10,27 @@
       .title{
         @media screen and (min-width: $tablet-medium){
           margin-left: 50px;
+          position: relative;
         }
         @media screen and (min-width: $desktop-medium){
           margin-left: auto;
           padding:0px;
+        }
+        .read__more{
+          @media screen and (min-width: $tablet-medium){
+            position: absolute;
+            right:17px;
+            top:15px;
+          }
+          @media screen and (min-width: $tablet-lage){
+            top:20px;
+          }
+          @media screen and (min-width: $desktop-medium) {
+            top: 30px;
+          }
+          &:hover{
+            right:0;
+          }
         }
       }
     }
@@ -21,6 +38,7 @@
       @media screen and (min-width: $mobile-small) {
         @include display-flex();
         margin: 0 -8px;
+        padding-bottom: 10px;
       }
     }
     &_item{

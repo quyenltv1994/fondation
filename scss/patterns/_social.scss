@@ -7,7 +7,6 @@
   .social-box{
     .content{
       background: #abc528;
-      max-width: 228px;
       @include display-flex();
       @include flex-align(center);
       @include flex-justify(center);

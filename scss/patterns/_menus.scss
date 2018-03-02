@@ -10,7 +10,6 @@
     @include transition (all .5s ease-in-out);
     background: transparent;
     &.open {
-
       span {
         &:nth-child(1),
         &:nth-child(6) {
@@ -159,7 +158,10 @@
         font-size: 14px;
         transition: all .5s;
         @include hover {
-          color: $navy-blue;
+          color: $color-readmore;
+        }
+        &.active {
+          color: $color-readmore;
         }
         @media screen and (max-width: $tablet-lage - 1px){
           color: $navy-blue;

@@ -44,6 +44,9 @@
       @media screen and (min-width: $desktop-medium){
         max-width: 67%;
       }
+      img{
+        display: block;
+      }
     }
     &--content{
       width: 100%;
@@ -52,7 +55,6 @@
       position: relative;
       padding:73px 25px 50px 50px;
       font-size: 18px;
-      box-shadow: 1px 1px 12px #ccc;
       line-height: 24px;
       @media screen and (min-width: $desktop-medium){
         padding:68px 88px 50px;

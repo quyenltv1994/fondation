@@ -138,11 +138,12 @@ h2{
   text-align: center;
   color: $navy-blue;
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   padding-bottom: 18px;
   position: relative;
   @media screen and (min-width: $mobile-small){
    width: calc(50% - 18px);
+   margin-bottom: 15px;
    margin:0 9px;
   }
   .key{
@@ -240,12 +241,15 @@ h2{
  right: auto;
  margin-left: auto;
  margin-right: auto;
+ max-width: 81rem;
  .container{
   width: 100%;
   position: relative;
  }
  .box-head{
-  @include display-flex();
+  @media screen and (min-width: $tablet-medium) {
+   @include display-flex();
+  }
  }
  .modal-close {
   color: #fff;
@@ -299,12 +303,24 @@ h2{
    .box-head-left{
     padding-left: 35px;
     padding-right: 35px;
-    width: 35%;
+    width: 100%;
+    text-align: center;
+    @media screen and (min-width: $tablet-medium){
+     width: 35%;
+    }
    }
    .box-head-right{
-    width: 60%;
+    width: 100%;
+    padding:15px;
+    @media screen and (min-width: $tablet-medium) {
+     width: 60%;
+     padding:0;
+    }
    }
   }
+ }
+ .box-simple{
+  padding: 40px 20px;
  }
  &.is-active{
   display: block;
@@ -360,7 +376,7 @@ h2{
  padding:30px 15px;
  margin-bottom: 20px;
  @media screen and (min-width: $tablet-medium){
-  max-width: 37%;
+  max-width: 38%;
   margin-bottom: 0;
  }
  @media screen and (min-width: $tablet-lage){
@@ -417,7 +433,7 @@ h2{
   margin-left: 15px;
  }
  @media screen and (min-width: $tablet-medium){
-  max-width: 63%;
+  max-width: 62%;
  }
  @media screen and (min-width: $desktop-small){
   margin-left: 80px;
@@ -464,3 +480,19 @@ h2{
   transform: translateY(25px);
  }
 }
+.Search-pattern{
+ padding: 5px 5px;
+ background: $color-bold;
+ color: $white;
+ font-size: 17px;
+}
+ul.primary li a{
+ color:$dark;
+}
+.list-of-news{
+ padding:0 10px;
+}
+.reveal-overlay{
+ display: none;
+}
+.fancybox-wrap {overflow:hidden}

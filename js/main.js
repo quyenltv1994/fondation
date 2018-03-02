@@ -27,6 +27,10 @@ var FConvention = (function ($, window, undefined) {
 
         //scroll window
         function _scrollDown(){
+            var _scrollTop = $(window).scrollTop();
+            if(_scrollTop > 0){
+                $(".header").addClass("sticky");
+            }
             $(window).scroll(function(){
                 var scrollTop = $(this).scrollTop();
                 if(scrollTop > 0){
@@ -69,12 +73,29 @@ var FConvention = (function ($, window, undefined) {
 
         //fancy box
         function _fancyBox(){
-        	$(".paroller").paroller({
-                factor: 0.2,            // multiplier for scrolling speed and offset
-                type: 'foreground',     // background, foreground
-                direction: 'vertical' // vertical, horizontal
+            var width_w = $(window).width();
+            if(width_w > 767){
+                $(".paroller").paroller({
+                    factor: 0.2,            // multiplier for scrolling speed and offset
+                    type: 'foreground',     // background, foreground
+                    direction: 'vertical' // vertical, horizontal
+                });
+            }
+            $(".popup-box").fancybox({
+                helpers: {
+                    overlay: {
+                        locked: false
+                    }
+                },
+                beforeShow:function(){
+                    $('html').css('overflowX', 'visible');
+                    $('body').css('overflowY', 'hidden');
+                },
+                afterClose:function(){
+                    $('html').css('overflowX', 'hidden');
+                    $('body').css('overflowY', 'visible');
+                }
             });
-            $(".popup-box").fancybox();
             $(".popup-box, .link-more").click(function(e){
                 e.preventDefault();
             })
