@@ -4166,7 +4166,8 @@ ul.primary li a {
       .fixed-menu .social-box .content ul li .icon-print {
         font-size: 12px;
         font-size: 0.75rem;
-        cursor: pointer; }
+        cursor: pointer;
+        padding-left: 10px; }
 
 .icon-print:before {
   content: "\e900"; }
