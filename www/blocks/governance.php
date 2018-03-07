@@ -38,7 +38,7 @@
                             <div class="item" style="background-image: url(&quot;http://corporate.airfrance.com/sites/default/files/styles/square_228x228/public/franck_terner_230_1.jpg?itok=ZzhYOkCB&quot;); ">
                                 <span property="dc:title" content="Franck Terner" class="rdf-meta element-hidden"></span>
                                 <div class="title">Franck <br> Terner
-                                    <a class="popup-box full-link" href="#popin--node-1037" data-open="popin--node-1037" aria-controls="popin--node-1037" aria-haspopup="true" tabindex="0"></a>
+                                    <a class="popup-box full-link" href="" data-open="popin--node-1037" aria-controls="popin--node-1037" aria-haspopup="true" tabindex="0"></a>
                                 </div>
 
 

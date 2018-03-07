@@ -4398,23 +4398,30 @@ var FConvention = (function ($, window, undefined) {
                     direction: 'vertical' // vertical, horizontal
                 });
             }
+            $("a.popup-box").bind( 'click', function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                var id = $(this).attr("data-open");
+                $(this).attr("href", "#"+id);
+            });
             $(".popup-box").fancybox({
+                scrolling : "no",
+                afterClose: function(){
+                    $("a.popup-box").attr("href", "");
+                },
                 helpers: {
                     overlay: {
                         locked: false
                     }
-                },
-                beforeShow:function(){
-                    $('html').css('overflowX', 'visible');
-                    $('body').css('overflowY', 'hidden');
-                },
-                afterClose:function(){
-                    $('html').css('overflowX', 'hidden');
-                    $('body').css('overflowY', 'visible');
                 }
             });
-            $(".popup-box, .link-more").click(function(e){
+            $("a.popup-box").bind( 'click', function(e){
                 e.preventDefault();
+                e.stopPropagation();
+            });
+            $(".link-more").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
             })
             $(document).on("click", ".modal-close", function() {
                 $(".fancybox-close").trigger('click');

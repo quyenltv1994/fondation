@@ -35,10 +35,7 @@ h1{
  align-items: center;
  justify-content: space-between;
  @media screen and (min-width: $tablet-lage){
-  font-size: 50px;
- }
- @media screen and (min-width: $desktop-small){
-  font-size: 65px;
+  font-size: 44px;
  }
 }
 h2{
@@ -64,10 +61,7 @@ h2{
   @include display-flex();
  }
  @media screen and (min-width: $tablet-lage){
-  font-size: 50px;
- }
- @media screen and (min-width: $desktop-small){
-  font-size: 65px;
+  font-size: 44px;
  }
  a{
   font-family: $font-medium;
@@ -91,6 +85,7 @@ h2{
  position: relative;
  overflow: hidden;
  transition: all .2s;
+ cursor: pointer;
  &:before{
   content:"";
   width:0px;
@@ -249,6 +244,14 @@ h2{
  .box-head{
   @media screen and (min-width: $tablet-medium) {
    @include display-flex();
+  }
+  .description{
+   a{
+    color:$color-readmore;
+    &:hover{
+     color:$color-hover;
+    }
+   }
   }
  }
  .modal-close {

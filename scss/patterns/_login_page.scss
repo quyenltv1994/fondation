@@ -1,0 +1,12 @@
+#user-login{
+  .form-item{
+    max-width: 500px;
+    input{
+      border:1px solid $color-title;
+    }
+  }
+  #edit-submit{
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+}
