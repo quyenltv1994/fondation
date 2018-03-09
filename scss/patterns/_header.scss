@@ -40,7 +40,7 @@
     @media screen and (min-width: $tablet-lage){
       max-width: 175px;
       position: absolute;
-      margin-top: 5px;
+      margin-top: 10px;
       margin-bottom: 0;
     }
     @media screen and (min-width: $desktop-medium){
@@ -51,10 +51,16 @@
     &-link {
       float: left;
       transition:all 1s;
+      display: block;
+      width: 100%;
+      img{
+        width: 120px;
+        margin:0 auto;
+      }
     }
   }
   &__right{
-    width: 80%;
+    width: 100%;
     @include display-flex();
     flex-direction: column-reverse;
     background: rgba($white, .9);
@@ -62,13 +68,12 @@
     left:-100%;
     top:0;
     transition: all 1s ease;
-    padding:30px 0;
+    padding:15px 0;
     &.opened{
       left:0;
     }
     @media screen and (min-width: $tablet-medium){
-      max-width: 600px;
-      padding:30px 15px;
+      padding:15px;
     }
     @media screen and (min-width: $tablet-lage){
       background: none;
@@ -87,6 +92,9 @@
       justify-content: flex-end;
       align-items: center;
       @media screen and (min-width: $tablet-lage){
+        height: 110px;
+      }
+      @media screen and (min-width: $desktop-medium){
         height: 85px;
       }
       &--main{
@@ -158,9 +166,13 @@
         align-items: center;
         position: unset;
         .main-search{
-          width: 100%;
+          width: 90%;
           display: flex;
+          @media screen and (min-width: $tablet-medium){
+            width: 95%;
+          }
           @media screen and (min-width: $tablet-lage){
+            width: 100%;
             display: block;
           }
         }
