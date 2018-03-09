@@ -48,6 +48,7 @@
     background: $white;
     box-shadow: 1px 1px 12px #ccc;
     margin:9px 0;
+    position: relative;
     @media screen and (min-width: $mobile-small){
       width: calc(50% - 18px );
       margin:9px;
@@ -71,6 +72,14 @@
       color: $navy-blue;
       font-family: $font-bold;
       line-height: 35px;
+    }
+    a{
+      position: absolute;
+      top:0;
+      right:0;
+      bottom: 0;
+      left:0;
+      font-size: 0;
     }
     &:hover{
       .read__more{
