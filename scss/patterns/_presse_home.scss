@@ -73,6 +73,9 @@
       font-family: $font-bold;
       line-height: 35px;
     }
+    &>div.node:first-child{
+      height: 100%;
+    }
     a{
       position: absolute;
       top:0;
@@ -188,6 +191,7 @@
       background: $white;
       box-shadow: 1px 1px 12px #ccc;
       margin:9px 0;
+      position: relative;
       @media screen and (min-width: $mobile-small){
         width: calc(50% - 18px );
         margin:9px;
@@ -198,6 +202,9 @@
       }
       .image{
         border-bottom: 6px solid #aeca10;
+        img{
+          display: block;
+        }
       }
       &:hover{
         .presse__home--item-title{
@@ -211,6 +218,26 @@
         &:hover{
           .presse__home--item-title{
             color: #ff0d0d;
+          }
+        }
+      }
+      a{
+        position: absolute;
+        top:0;
+        right:0;
+        bottom: 0;
+        left:0;
+        font-size: 0;
+      }
+      &:hover{
+        .read__more{
+          padding-left: 52px;
+          color:$color-readmore;
+          &:before{
+            left: 27px;
+          }
+          &:after{
+            left:0;
           }
         }
       }

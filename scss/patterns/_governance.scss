@@ -6,6 +6,9 @@
   .governance-content{
     @include display-flex();
   }
+  .container{
+    width: 100%;
+  }
   .sidebar{
     border-top:6px solid #a0e3f1;
   }

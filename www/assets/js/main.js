@@ -4385,7 +4385,8 @@ var FConvention = (function ($, window, undefined) {
                 $(this).addClass("is-active");
                 $(this).closest('.container').find(".tabs-panel").hide();
                 $(href).show();
-            })
+            });
+
         }
 
         //fancy box

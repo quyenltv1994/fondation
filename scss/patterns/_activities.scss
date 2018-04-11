@@ -6,7 +6,7 @@
     padding:109px 0 150px;
   }
   @media screen and (min-width: $desktop-medium){
-    padding:109px 0 235px;
+    padding:109px 0 365px;
   }
   .sidebar{
     border-top: 6px solid #f05428;
@@ -33,6 +33,12 @@
             color: $navy-blue;
           }
         }
+    }
+  }
+  &+div{
+    padding-top: 80px;
+    @media screen and (min-width: $desktop-small){
+      padding-top: 250px;
     }
   }
 }

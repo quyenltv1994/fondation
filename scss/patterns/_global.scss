@@ -499,3 +499,13 @@ ul.primary li a{
  display: none;
 }
 .fancybox-wrap {overflow:hidden}
+.groupedlink{
+  margin-bottom: 30px;
+  .read{
+    background: #0062e6;
+    height: 65px;
+    .read__more{
+      line-height: 55px;
+    }
+  }
+}

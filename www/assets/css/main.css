@@ -1895,6 +1895,16 @@ ul.primary li a {
 .fancybox-wrap {
   overflow: hidden; }
 
+.groupedlink {
+  margin-bottom: 30px; }
+  .groupedlink .read {
+    background: #0062e6;
+    height: 65px;
+    height: 4.0625rem; }
+    .groupedlink .read .read__more {
+      line-height: 55px;
+      line-height: 3.4375rem; }
+
 /* Header css
  ----------------------------------------------------------------------------------------------------*/
 .header {
@@ -3519,6 +3529,8 @@ ul.primary li a {
       font-family: excellenceinmotion_bold;
       line-height: 35px;
       line-height: 2.1875rem; }
+    .presse__home--item > div.node:first-child {
+      height: 100%; }
     .presse__home--item a {
       position: absolute;
       top: 0;
@@ -3594,7 +3606,8 @@ ul.primary li a {
       background: #fff;
       box-shadow: 1px 1px 12px #ccc;
       margin: 9px 0;
-      margin: 0.5625rem 0; }
+      margin: 0.5625rem 0;
+      position: relative; }
       @media screen and (min-width: 480px) {
         .presse__home.see-also-block .block-bean {
           width: calc(50% - 18px);
@@ -3610,6 +3623,8 @@ ul.primary li a {
       .presse__home.see-also-block .block-bean .image {
         border-bottom: 6px solid #aeca10;
         border-bottom: 0.375rem solid #aeca10; }
+        .presse__home.see-also-block .block-bean .image img {
+          display: block; }
       .presse__home.see-also-block .block-bean:hover .presse__home--item-title {
         color: #aeca10; }
       .presse__home.see-also-block .block-bean:nth-child(2) .image {
@@ -3617,6 +3632,21 @@ ul.primary li a {
         border-bottom: 0.375rem solid #ff0d0d; }
       .presse__home.see-also-block .block-bean:nth-child(2):hover .presse__home--item-title {
         color: #ff0d0d; }
+      .presse__home.see-also-block .block-bean a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        font-size: 0; }
+      .presse__home.see-also-block .block-bean:hover .read__more {
+        padding-left: 52px;
+        color: #0062e6; }
+        .presse__home.see-also-block .block-bean:hover .read__more:before {
+          left: 27px;
+          left: 1.6875rem; }
+        .presse__home.see-also-block .block-bean:hover .read__more:after {
+          left: 0; }
 
 .bref__home {
   margin-bottom: 50px; }
@@ -3732,7 +3762,6 @@ ul.primary li a {
         height: 31.25rem; } }
     @media screen and (min-width: 1023px) {
       .video .complex-content .video-content {
-        height: auto;
         width: 63%; } }
     .video .complex-content .video-content * {
       height: 100%;
@@ -3750,6 +3779,8 @@ ul.primary li a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+  .governance .container {
+    width: 100%; }
   .governance .sidebar {
     border-top: 6px solid #a0e3f1;
     border-top: 0.375rem solid #a0e3f1; }
@@ -3805,8 +3836,8 @@ ul.primary li a {
       display: none; }
 
 .keyfigures {
-  padding: 60px 0;
-  padding: 3.75rem 0; }
+  padding: 60px 0 150px;
+  padding: 3.75rem 0 9.375rem; }
   .keyfigures .sidebar {
     border-top: 6px solid #d41923;
     border-top: 0.375rem solid #d41923; }
@@ -3844,8 +3875,8 @@ ul.primary li a {
       padding: 6.8125rem 0 9.375rem; } }
   @media screen and (min-width: 1280px) {
     .activities {
-      padding: 109px 0 235px;
-      padding: 6.8125rem 0 14.6875rem; } }
+      padding: 109px 0 365px;
+      padding: 6.8125rem 0 22.8125rem; } }
   .activities .sidebar {
     border-top: 6px solid #f05428;
     border-top: 0.375rem solid #f05428; }
@@ -3868,6 +3899,11 @@ ul.primary li a {
     font-size: 2rem;
     font-family: excellenceinmotion_bold;
     color: #051039; }
+  .activities + div {
+    padding-top: 80px; }
+    @media screen and (min-width: 1024px) {
+      .activities + div {
+        padding-top: 250px; } }
 
 .alliances {
   padding: 70px 0 60px;
@@ -4787,7 +4823,6 @@ ul.primary li a {
         height: 31.25rem; } }
     @media screen and (min-width: 1023px) {
       .video .complex-content .video-content {
-        height: auto;
         width: 63%; } }
     .video .complex-content .video-content * {
       height: 100%;
